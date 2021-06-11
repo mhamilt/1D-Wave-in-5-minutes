@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css">
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-transition='fade'>
+        welcome
+      </section>
+      <section data-transition='fade'>
+        $\omega \epsilon lcome$
+      </section>
+      <section>
+        <p>
+          <i class="fragment" data-fragment-index="2">$\dot{x}$</i>
+          <i class="fragment" data-fragment-index="1">$m\ddot{x} = -kx$</i>
+          <i class="fragment" data-fragment-index="2">$\dot{x}$</i>
+        </p>
+        <p class="fragment">$\frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) = -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right)$</p>
+        <p class="fragment">$\frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) = 0 \qquad \qquad \qquad \quad \ \ \ $</p>
+
+        <div class="r-stack fragment">
+          <p class="fragment fade-in-then-out">$ \ \ \ \ \ \ \frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right) = 0 \\[14pt] $</p>
+          <!-- <p class="fragment fade-in-then-out">$\underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{}} = 0 \qquad \qquad \qquad \ \ \ \ $</p> -->
+          <p class="fragment fade-in-then-out">$\underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{Looks familiar}} = 0 \qquad \qquad \qquad \quad $</p>
+          <!-- <p class="fragment">$\underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\frac{dE}{dt}} = 0 \qquad \qquad \qquad \quad $</p> -->
+          <p class="fragment grow">$\frac{d}{dt}(\underbrace{\frac{1}{2}m\dot{x}^{2}}_{E_k} + \frac{1}{2}kx^{2} ) = 0 \qquad \qquad \qquad \quad $</p>
+        </div>
+        <!-- <p class="fragment">$\frac{dE}{dt} = 0$</p>
+        <p class="fragment">$E = \underbrace{\frac{1}{2}m\dot{x}^{2}}_{E_k} + \underbrace{\frac{1}{2}kx^{2}}_{E_p}$</p> -->
+      </section>
+      <section>
+        <div class="r-stack">
+          <img class="fragment" src="https://placekitten.com/450/300" width="450" height="300">
+          <img class="fragment" src="https://placekitten.com/300/450" width="300" height="450">
+          <img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
+        </div>
+      </section>
+      <section data-transition='fade'>
+        <p>
+          $$
+          m\ddot{x} = -kx
+          $$
+        </p>
+      </section>
+      <section data-transition='fade'>
+        <p>
+          $$
+
+          $$
+        </p>
+      </section>
+      <section data-transition='none'>
+        <p>
+          $$
+
+          m\ddot{x}\dot{x} = -kx\dot{x} \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) = -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right)
+
+          $$
+        </p>
+      </section>
+      <section data-transition='none'>
+
+        $$
+        m\ddot{x}\dot{x} = -kx\dot{x} \\
+        \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) = -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
+        \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) = 0 \qquad \qquad \qquad \qquad \ \
+        $$
+
+      </section>
+      <section data-transition='none'>
+        <p>
+          $$
+          \begin{aligned}
+          \qquad \qquad \quad m\ddot{x}\dot{x} &= -kx\dot{x}
+          \end{aligned}
+          $$
+        </p>
+      </section>
+      <section data-transition='none'>
+        <p>
+          $$
+          \begin{aligned}
+          \qquad \qquad \qquad \quad m\ddot{x}\dot{x} &= -kx\dot{x} \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right)
+          \end{aligned}
+          $$
+        </p>
+      </section>
+      <section data-transition='none'>
+        <p>
+          $$
+          \begin{aligned}
+          m\ddot{x}\dot{x} &= -kx\dot{x} \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0
+          \end{aligned}
+          $$
+        </p>
+      </section>
+      <section data-transition='none'>
+        <p>
+          $$
+          \begin{aligned}
+          m\ddot{x}\dot{x} &= -kx\dot{x} \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0 \\
+          \frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right) &= 0
+          \end{aligned}
+          $$
+        </p>
+      </section>
+      <section data-transition='none'>
+        <p>
+          $$
+          \begin{aligned}
+          m\ddot{x}\dot{x} &= -kx\dot{x} \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0 \\
+          \underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{Looks familiar}} &= 0
+          \end{aligned}
+          $$
+        </p>
+      </section>
+      <section data-transition='none'>
+        <p>
+          $$
+          \begin{aligned}
+          m\ddot{x}\dot{x} &= -kx\dot{x} \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0 \\
+          \underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{Looks familiar}} &= 0 \\
+          \frac{dE}{dt} &= 0
+          \end{aligned}
+          $$
+        </p>
+      </section>
+      <section data-transition='none'>
+        <p>
+          $$
+          \begin{aligned}
+          m\ddot{x}\dot{x} &= -kx\dot{x} \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
+          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0 \\
+          \underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{Looks familiar}} &= 0 \\
+          \frac{dE}{dt} &= 0 \\
+          E &= \underbrace{\frac{1}{2}m\dot{x}^{2}}_{E_k} + \underbrace{\frac{1}{2}kx^{2}}_{E_p}
+          \end{aligned}
+          $$
+        </p>
+      </section>
+      <section>Slide 2</section>
+      <section>
+        <iframe data-src="https://hakim.se" data-preload></iframe>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/math/math.js"></script>
+
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      autoAnimateEasing: 'ease-out',
+      autoAnimateDuration: 0.8,
+      autoAnimateUnmatched: false,
+      hash: true,
+      math: {
+        mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+        config: 'TeX-AMS_HTML-full',
+        // pass other options into `MathJax.Hub.Config()`
+        TeX: {
+          Macros: {
+            RR: "{\\bf R}"
+          }
+        }
+      },
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
+    });
+  </script>
+</body>
+
+</html>
