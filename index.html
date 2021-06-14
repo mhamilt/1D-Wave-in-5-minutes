@@ -20,8 +20,7 @@
     }
 
     .hidden {
-      color: var(--background-color);
-      z-index: -10;
+      color: rgba(255, 0, 0, 0.0);
     }
   </style>
 </head>
@@ -74,12 +73,16 @@
                 <i data-fragment-index="8" class="fragment fade-in-then-out">$F_L + F_R=$ $m_{\Delta x}$ $a$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
                 <i data-fragment-index="9" class="fragment fade-in-then-out">$F_L + F_R=$ $\rho \Delta x$ $a$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
                 <i data-fragment-index="10" class="fragment"><i data-fragment-index="11" class="fragment fade-out">$F_L + F_R=$ $\rho \Delta x$ $\frac{\partial^2y}{\partial t^2}$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i></i>
-                <i data-fragment-index="11" class="fragment fade-in"><i data-fragment-index="18" class="fragment fade-out">$\rho \Delta x \frac{\partial^2y}{\partial t^2} = F_L$ <i class="hidden">$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 +
-                      \Delta x}$</i> $+ F_R$<i class="hidden">$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i></i></i>
-                <i data-fragment-index="18" class="fragment fade-in-then-out">$\rho \Delta x \frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$<i class="hidden">$F_L$</i> $+$ $F_R$<i
-                    class="hidden">$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i></i>
-                <i data-fragment-index="19" class="fragment fade-in-then-out">$\rho \Delta x \frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$<i class="hidden">$F_L$</i> $+$ <i
-                    class="hidden">$F_R$</i>$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i>
+                <i data-fragment-index="11" class="fragment fade-in">
+                  <i data-fragment-index="18" class="fragment fade-out">$\rho \Delta x \frac{\partial^2y}{\partial t^2} = F_R$ <i class="hidden">$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i> $+ F_L$<i
+                      class="hidden">$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i></i>
+                </i>
+                <i data-fragment-index="18" class="fragment fade-in-then-out">
+                  $\rho \Delta x \frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$<i class="hidden">$F_L$</i> $+$ $F_L$<i class="hidden">$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i>
+                </i>
+                <i data-fragment-index="19" class="fragment fade-in-then-out">
+                  $\rho \Delta x \frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$<i class="hidden">$F_L$</i> $+$ <i class="hidden">$F_R$</i>$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$
+                </i>
               </div>
             </li>
           </ul>
