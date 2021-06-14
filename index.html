@@ -14,91 +14,121 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
   <!-- Theme used for syntax highlighted code -->
   <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <style>
+    .spacey-list * {
+      margin-bottom: 1em;
+    }
 
+    .hidden {
+      color: var(--background-color);
+      z-index: -10;
+    }
+  </style>
 </head>
 
 <body>
   <div class="reveal">
     <div class="slides">
-      <section data-transition='fade'>
-        1D Wave Equation (in 5 Minutes)
+      <section data-auto-animate data-transition='fade'>
+        <h1>1D Wave Equation</h1>
+        <h1>(in 5 Minutes)</h1>
+      </section>
+      <section data-auto-animate data-transition='fade'>
+        <h1 style="margin-top: 25px; font-size: 0.8em;">1D Wave Equation</h1>
+        <!-- <h1 style="margin-top: 50px; font-size: 60px;">(in 5 Minutes)</h1> -->
+        <p class="fragment"><b>Deriving Equation of Motion</b></p>
+        <p class="fragment"><strong>Parameters:</strong></p>
+        <p>
+          <ul>
+            <li class="fragment">$T_0$: Tension (Newtons)</li>
+            <li class="fragment">$\rho$: Linear String Density (kg / m)</li>
+            <li class="fragment">$y(x, t)$: String Displacement</li>
+          </ul>
+        </p>
+        <p class="fragment"><b>Assumptions:</b></p>
+        <p>
+          <ul>
+            <li class="fragment">Infinite Length</li>
+            <li class="fragment">Transverse Motion Only (i.e. only move in y-axis)</li>
+            <li class="fragment">Under Tension $T_0$ in the $x$-axis</li>
+          </ul>
+        </p>
       </section>
       <section data-transition='fade'>
-        <h1>Deriving Equation of Motion</h1>
-        <h2>Parameters:</h2>
+        <h1 style="margin-top: 25px; font-size: 0.8em;">1D Wave Equation</h1>
         <p>
-          $T_0$: Tension (Newtons)
+          Show String
         </p>
         <p>
-          $\rho$: Linear String Density (kg / m)
-        </p>
-        <p>
-          $y(x, t)$: String Displacement
-        </p>
-
-        <h2>Assumptions:</h2>
-        <p>
-          Infinite Length
-        </p>
-        <p>
-          Constrained to Transverse Motion (i.e. only move in y-axis)
-        </p>
-        <p>
-          Under Tension $T_0$ in x_axis
+          Show in tiny detail
         </p>
       </section>
-      <h1>Deriving Equation of Motion</h1>
-      <p>
-        Show String
-      </p>
-      <p>
-        Show in tiny detail
-      </p>
-      <p>
-        $F_R = T_0sin\theta_{x + \Delta x} ;\quad sin\theta \approx tan\theta (\text{for small} \theta)$
-      </p>
-      <p>
-        Deduce that $tan\theta = \frac{\partial y}{\partial x}$
-      </p>
-      <p>
-        $F_R = T_0\frac{\partialy}{\partialx}\bigg\vert_{x_1 + \Delta x}$ therefore $F_L = -T_0\frac{\partialy}{\partialx}\bigg\vert_{x_1}$
-      </p>
-      <p>
-        $F = ma ; \quad F = F_L + F_R; \quad a \Rightarrow \frac{\partial^2y}{\partial t^2} ; \quad m_{\Delta x} = \rho \Delta x$
-      </p>
-      <p>
-        $m\frac{\partial^2y}{\partial t^2} = F_R + F_L$
-      </p>
-      <p>
-        $m\frac{\partial^2y}{\partial t^2} = T_0\frac{\partialy}{\partialx}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partialy}{\partialx}\bigg\vert_{x_1}$
-      </p>
-      <p>
-        $\rho \Delta x\frac{\partial^2y}{\partial t^2} = T_0\frac{\partialy}{\partialx}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partialy}{\partialx}\bigg\vert_{x_1}$
-      </p>
-      <p>
-        $\rho \Delta x\frac{\partial^2y}{\partial t^2} = T_0\left(\frac{\partialy}{\partialx}\bigg\vert_{x_1 + \Delta x} - \frac{\partialy}{\partialx}\bigg\vert_{x_1}\right)$
-      </p>
-      <p>
-        $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{\left(\frac{\partialy}{\partialx}\bigg\vert_{x_1 + \Delta x} - \frac{\partialy}{\partialx}\bigg\vert_{x_1}\right)}{\Delta x}$
-      </p>
-      <p>
-        Remember: $\frac{dy}{dx} = \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h}$
-      </p>
-      <p>
-        Remember: $\frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x}$
-      </p>
-      <p>
-        $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{\left(\frac{\partialy}{\partialx}\bigg\vert_{x_1 + \Delta x} - \frac{\partialy}{\partialx}\bigg\vert_{x_1}\right)}{\Delta x}$
-      </p>
-      <p>
-        $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}$
-      </p>
-      <p>
-        $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{\partial^2 y(x_1)}{\partial x^2}$
-      </p>
-      <p>
-        $\frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y(x_1)}{\partial x^2}$ defining $c = \sqrt{\frac{T_0}{\rho}}$
-      </p>
+      <section data-transition='fade'>
+        <p>
+          <ul class="spacey-list" style="list-style-type: none;">
+            <li>
+              <div class="r-stack">
+                <i data-fragment-index="1" class="fragment fade-in-then-out"><i>$F_R = T_0sin\theta_{x + \Delta x} \quad$</i><i class="hidden">($sin\theta \approx tan\theta$ for small $\theta$)</i></i>
+                <i data-fragment-index="2" class="fragment fade-in-then-out"><i>$F_R = T_0sin\theta_{x + \Delta x} \quad$</i><i>($sin\theta \approx tan\theta$ for small $\theta$)</i></i>
+                <i data-fragment-index="3" class="fragment"><i>$F_R = T_0sin\theta_{x + \Delta x} \quad$</i><i>We deduce: $\quad tan\theta = \frac{\partial y}{\partial x}$</i></i>
+              </div>
+            </li>
+            <li><i data-fragment-index="4" class="fragment">$F_R = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i> <i data-fragment-index="5" class="fragment">and $F_L = -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$</i></li>
+            <li>
+              <div class="r-stack">
+                <i data-fragment-index="6" class="fragment fade-in-then-out" data-fragment-index="1"><i class="hidden">$F_L + $</i>$F_{}$<i class="hidden">$$</i>$= m$ <i class="hidden">$\delta_{}$</i> $a$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
+                <i data-fragment-index="7" class="fragment fade-in-then-out">$F_L + F_R=$ $m$ <i class="hidden">$\delta$</i> $a$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
+                <i data-fragment-index="8" class="fragment fade-in-then-out">$F_L + F_R=$ $m_{\Delta x}$ $a$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
+                <i data-fragment-index="9" class="fragment fade-in-then-out">$F_L + F_R=$ $m_{\Delta x}$ $\frac{\partial^2y}{\partial t^2}$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
+                <i data-fragment-index="10" class="fragment ">$F_L + F_R=$ $\rho \Delta x$ $\frac{\partial^2y}{\partial t^2}$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
+              </div>
+            </li>
+            <!-- <li>$F = ma$ $F = F_L + F_R$ $a \Rightarrow \frac{\partial^2y}{\partial t^2}$ $m_{\Delta x} = \rho \Delta x$</li> -->
+          </ul>
+        </p>
+        <div class="r-stack ">
+          <i data-fragment-index="6" class="fragment fade-in-then-out">Newtons $2^{nd}$ Law </i>
+          <i data-fragment-index="7" class="fragment fade-in-then-out">Therefore: $F = F_L + F_R$ </i>
+          <i data-fragment-index="8" class="fragment fade-in-then-out">mass over one $\Delta x ^{th}$ of string</i>
+          <i data-fragment-index="9" class="fragment fade-in-then-out">which can be expressed as $\Delta x ^{ths}$ worth of the linear mass density $\rho$</i>
+          <i data-fragment-index="10" class="fragment">$a \Rightarrow \frac{\partial^2y}{\partial t^2}$ </i>
+        </div>
+      </section>
+      <section data-transition='fade'>
+        <p>
+          $m\frac{\partial^2y}{\partial t^2} = F_R + F_L$
+        </p>
+        <p>
+          $m\frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$
+        </p>
+        <p>
+          $\rho \Delta x\frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$
+        </p>
+        <p>
+          $\rho \Delta x\frac{\partial^2y}{\partial t^2} = T_0\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)$
+        </p>
+        <p>
+          $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}$
+        </p>
+        <p>
+          Remember: $\frac{dy}{dx} = \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h}$
+        </p>
+        <p>
+          Remember: $\frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x}$
+        </p>
+        <p>
+          $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}$
+        </p>
+        <p>
+          $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}$
+        </p>
+        <p>
+          $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{\partial^2 y(x_1)}{\partial x^2}$
+        </p>
+        <p>
+          $\frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y(x_1)}{\partial x^2}$ defining $c = \sqrt{\frac{T_0}{\rho}}$
+        </p>
+      </section>
       <section data-transition='fade'>
         <h1>Deriving Modes</h1>
         <h2>Solutions for 1D Wave</h2>
@@ -106,13 +136,13 @@
           $y(x, t) = y(x)e^{i\omega t}$ into $\frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y(x_1)}{\partial x^2}$
         </p>
         <p>
-          $y(x)(i\omega)^2e^{i\omegat} = c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t}$
+          $y(x)(i\omega)^2e^{i\omega t} = c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t}$
         </p>
         <p>
-          $y(x)(-\omega)^2e^{i\omegat} = c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t}$ divide $c^2e^{i\omega t}$ or multiply $\frac{1}{c^2e^{i\omega t}}$
+          $y(x)(-\omega)^2e^{i\omega t} = c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t}$ divide $c^2e^{i\omega t}$ or multiply $\frac{1}{c^2e^{i\omega t}}$
         </p>
         <p>
-          $y(x)frac{(-\omega)^2}{c^2}\cancel{e^{i\omegat}} = \cancel{c^2}\frac{\partial^2y}{\partial x^2}\cancel{e^{i\omega t}}$
+          $\require{cancel}y(x)frac{(-\omega)^2}{c^2}\cancel{e^{i\omega t}} = \cancel{c^2}\frac{\partial^2y}{\partial x^2}\cancel{e^{i\omega t}}$
         </p>
         <p>
           $y(x)frac{(-\omega)^2}{c^2} = \frac{\partial^2y}{\partial x^2}$
@@ -192,10 +222,10 @@
           $Ae^{i(\omega t)} = -Be^{i(\omega t)}$
         </p>
         <p>
-          $A\cancel{e^{i(\omega t)}} = -B\cancel{e^{i(\omega t)}}$
+          $\require{cancel}A\cancel{e^{i(\omega t)}} = -B\cancel{e^{i(\omega t)}}$
         </p>
         <p>
-          $A\cancel{e^{i(\omega t)}} = -B\cancel{e^{i(\omega t)}}$
+          $\require{cancel}A\cancel{e^{i(\omega t)}} = -B\cancel{e^{i(\omega t)}}$
         </p>
         <p>
           $A = -B$
@@ -403,6 +433,8 @@
     // More info about initialization & config:
     // - https://revealjs.com/initialization/
     // - https://revealjs.com/config/
+
+
     Reveal.initialize({
       autoAnimateEasing: 'ease-out',
       autoAnimateDuration: 0.8,
@@ -415,6 +447,9 @@
         TeX: {
           Macros: {
             RR: "{\\bf R}"
+          },
+          packages: {
+            '[+]': ['cancel']
           }
         }
       },
