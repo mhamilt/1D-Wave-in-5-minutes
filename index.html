@@ -19,6 +19,10 @@
       margin-bottom: 1em;
     }
 
+    .equation-summary * {
+      font-size: 20px;
+    }
+
     .hidden {
       color: rgba(255, 0, 0, 0.0);
     }
@@ -64,120 +68,415 @@
       </section>
       <section data-transition='fade'>
         <p>
-          <ul class="spacey-list" style="list-style-type: none;">
-            <li>
-              <div class="r-stack">
-                <i data-fragment-index="6" class="fragment fade-in-then-out" data-fragment-index="1"><i class="hidden">$F_L + $</i>$F$ <i class="hidden">$a_a$</i> $= m$ <i class="hidden">$\delta_{}$</i> $a$<i
-                    class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
-                <i data-fragment-index="7" class="fragment fade-in-then-out">$F_L + F_R$ <i class="hidden">$ $</i> $=$ $m$ <i class="hidden">$\delta$</i> $a$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
-                <i data-fragment-index="8" class="fragment fade-in-then-out">$F_L + F_R=$ $m_{\Delta x}$ $a$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
-                <i data-fragment-index="9" class="fragment fade-in-then-out">$F_L + F_R=$ $\rho \Delta x$ $a$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i>
-                <i data-fragment-index="10" class="fragment"><i data-fragment-index="11" class="fragment fade-out">$F_L + F_R=$ $\rho \Delta x$ $\frac{\partial^2y}{\partial t^2}$<i class="hidden">$\frac{\partial^2y}{\partial t^2}$</i></i></i>
-                <i data-fragment-index="11" class="fragment fade-in">
-                  <i data-fragment-index="18" class="fragment fade-out">$\rho \Delta x \frac{\partial^2y}{\partial t^2} = F_R$ <i class="hidden">$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i> $+ F_L$<i
-                      class="hidden">$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i></i>
-                </i>
-                <i data-fragment-index="18" class="fragment fade-in-then-out">
-                  $\rho \Delta x \frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$<i class="hidden">$F_L$</i> $+$ $F_L$<i class="hidden">$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i>
-                </i>
-                <i data-fragment-index="19" class="fragment fade-in-then-out">
-                  $\rho \Delta x \frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$<i class="hidden">$F_L$</i> $+$ <i class="hidden">$F_R$</i>$T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$
-                </i>
-              </div>
-            </li>
-          </ul>
+          Narrative with Transitions
         </p>
+        <div class="r-stack">
+          <i data-fragment-index="1" class="fragment fade-in">
+            <i class="hidden">$F_L + $</i>
+            <i data-fragment-index="2" class="fragment fade-out">$F_{ \quad }$</i>
+            $=\quad$
+            <i data-fragment-index="3" class="fragment fade-out">$m \quad $</i>
+            <i data-fragment-index="5" class="fragment fade-out">$a$</i>
+          </i>
+          <i data-fragment-index="2" class="fragment fade-in">
+            $F_L + F_R$
+            <i class="hidden">$=$ $m$ $\delta$ $a$ $\frac{\partial^2y}{\partial t^2}$</i>
+          </i>
+          <i data-fragment-index="3" class="fragment fade-in">
+            <i class="hidden">$F_L + F_R$ $=$ </i>
+            <i data-fragment-index="4" class="fragment fade-out">
+              $m_{\Delta x}$
+            </i>
+            <i class="hidden">$a$</i>
+          </i>
+          <i data-fragment-index="4" class="fragment fade-in">
+            <i class="hidden">$F_L + F_R$ $=$</i>
+            $\rho \Delta x$
+            <i class="hidden">$a$</i>
+          </i>
+          <i data-fragment-index="5" class="fragment fade-in">
+            <i class="hidden">$F_L + F_R$ $=$ $\rho \Delta x$ </i>
+            $ \quad \frac{\partial^2y}{\partial t^2}$
+          </i>
+        </div>
+        <br />
         <div class="r-stack ">
-          <i data-fragment-index="6" class="fragment fade-in-then-out">Newtons $2^{nd}$ Law </i>
-          <i data-fragment-index="7" class="fragment fade-in-then-out">$F = F_L + F_R$ </i>
-          <i data-fragment-index="8" class="fragment fade-in-then-out">mass over one $\Delta x ^{th}$ of string</i>
-          <i data-fragment-index="9" class="fragment fade-in-then-out">which can be expressed as $\Delta x ^{ths}$ worth of the linear mass density $\rho$</i>
-          <i data-fragment-index="10" class="fragment fade-in"><i data-fragment-index="12" class="fragment fade-out">$a = \frac{\partial^2y}{\partial t^2}$ </i></i>
-          <i data-fragment-index="12" class="fragment fade-in-then-out"><i>$F_R = T_0sin\theta_{x + \Delta x} \quad$</i><i class="hidden">($sin\theta \approx tan\theta$ for small $\theta$)</i></i>
-          <i data-fragment-index="13" class="fragment fade-in-then-out"><i>$F_R = T_0sin\theta_{x + \Delta x} \quad$</i><i>($sin\theta \approx tan\theta$ for small $\theta$)</i></i>
-          <i data-fragment-index="14" class="fragment fade-in-then-out"><i>$F_R = T_0sin\theta_{x + \Delta x} \quad$</i><i>We deduce: $\quad tan\theta = \frac{\partial y}{\partial x}$</i></i>
-          <i data-fragment-index="17" class="fragment fade-in">$F_R = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$ <i data-fragment-index="19" class="fragment">and $F_L = -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$</i></i>
+          <i data-fragment-index="1" class="fragment fade-in-then-out">Newtons $2^{nd}$ Law </i>
+          <i data-fragment-index="2" class="fragment fade-in-then-out">$F = F_L + F_R$ </i>
+          <i data-fragment-index="3" class="fragment fade-in-then-out">mass over one $\Delta x ^{th}$ of string</i>
+          <i data-fragment-index="4" class="fragment fade-in-then-out">which can be expressed as $\Delta x ^{ths}$ worth of the linear mass density $\rho$</i>
+          <i data-fragment-index="5" class="fragment ">$a = \frac{\partial^2y}{\partial t^2}$</i>
         </div>
       </section>
-      <!-- <p>
-        $m\frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$
-      </p>
-      <p>
-        $\rho \Delta x\frac{\partial^2y}{\partial t^2} = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$
-      </p>
-      <p>
-        $\rho \Delta x\frac{\partial^2y}{\partial t^2} = T_0\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)$
-      </p>
-      <p>
-        $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}$
-      </p>
-      <p>
-        Remember: $\frac{dy}{dx} = \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h}$
-      </p>
-      <p>
-        Remember: $\frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x}$
-      </p>
-      <p>
-        $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}$
-      </p>
-      <p>
-        $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}$
-      </p>
-      <p>
-        $\rho \frac{\partial^2y}{\partial t^2} = T_0\frac{\partial^2 y(x_1)}{\partial x^2}$
-      </p>
-      <p>
-        $\frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y(x_1)}{\partial x^2}$ defining $c = \sqrt{\frac{T_0}{\rho}}$
-      </p> -->
       <section data-transition='fade' data-auto-animate>
         <p>
-          \[\begin{aligned}
-          \rho \Delta x\frac{\partial^2y}{\partial t^2} &= F_R + F_L \\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}\\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)\\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}
-          \end{aligned}
-          \]
+          Narrative with Transitions
         </p>
+        <div class="r-stack">
+          <i>
+            $\rho \Delta x \frac{\partial^2y}{\partial t^2} =\quad $
+            <i data-fragment-index="6" class="fragment fade-out">$F_R$ </i>
+            <i data-fragment-index="7" class="fragment fade-out">$ \qquad\quad + \quad$</i>
+            <i data-fragment-index="7" class="fragment fade-out">$F_L$ </i>
+          </i>
+          <i data-fragment-index="6" class="fragment fade-in">
+            <i class="hidden">$\rho \Delta x \frac{\partial^2y}{\partial t^2} = \quad$</i>
+            $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$
+            <i class="hidden">$\quad + \quad F_L$</i>
+          </i>
+          <i data-fragment-index="7" class="fragment fade-in">
+            <i class="hidden">$\rho \Delta x \frac{\partial^2y}{\partial t^2} = \quad$ $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$</i>
+            $\qquad - \quad$
+            $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$
+          </i>
 
-        <div data-id="box" style=" position: absolute; top: 3.85em;left: 0; bottom:0; right:0; background: var(--background-color);"></div>
+        </div>
+        <br />
+        <div class="r-stack ">
+          <i data-fragment-index="2" class="fragment fade-out">Flip it</i>
+          <i data-fragment-index="2" class="fragment fade-in">
+            <i data-fragment-index="5" class="fragment fade-out">$F_R = T_0sin\theta_{x + \Delta x} \quad$</i>
+            <i class="hidden">($sin\theta \approx tan\theta$ for small $\theta$)</i>
+          </i>
+          <i data-fragment-index="3" class="fragment fade-in-then-out">
+            <i class="hidden">$F_R = T_0sin\theta_{x + \Delta x} \quad$</i>
+            <i>($sin\theta \approx tan\theta$ for small $\theta$)</i>
+          </i>
+          <i data-fragment-index="4" class="fragment fade-in-then-out">
+            <i class="hidden">$F_R = T_0sin\theta_{x + \Delta x} \quad$</i>
+            <i>We deduce: $\quad tan\theta = \frac{\partial y}{\partial x}$</i>
+          </i>
+          <i data-fragment-index="5" class="fragment fade-in">
+            $F_R = T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x}$
+            <i data-fragment-index="7" class="fragment">and $F_L = -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$</i>
+          </i>
+        </div>
       </section>
-      <section data-auto-animate>
+      <section data-transition='fade' data-auto-animate>
         <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
           \[\begin{aligned}
-          \rho \Delta x\frac{\partial^2y}{\partial t^2} &= F_R + F_L \\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}\\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)\\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \end{aligned}
           \]
         </p>
-        <div data-id="box" style=" position: absolute; top: 6.7em;left: 0; bottom:0; right:0; background: var(--background-color);"></div>
       </section>
-      <section data-auto-animate>
+      <section data-transition='fade' data-auto-animate>
         <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
           \[\begin{aligned}
-          \rho \Delta x\frac{\partial^2y}{\partial t^2} &= F_R + F_L \\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}\\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)\\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
           \end{aligned}
           \]
         </p>
-        <div data-id="box" style=" position: absolute; top: 10em;left: 0; bottom:0; right:0; background: var(--background-color);"></div>
       </section>
-      <section data-auto-animate>
+      <section data-transition='fade' data-auto-animate>
         <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
           \[\begin{aligned}
-          \rho \Delta x\frac{\partial^2y}{\partial t^2} &= F_R + F_L \\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}\\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)\\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
           \end{aligned}
           \]
         </p>
-        <div data-id="box" style=" position: absolute; top: 15em;left: 0; bottom:0; right:0; background: var(--background-color);"></div>
       </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x}\\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History type 1
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \color{#00000000}\rho\frac{\partial^2y}{\partial t^2}&= \color{#00000000}T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= \color{#00000000}T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \color{#00000000}\text{Remember}: \frac{dy}{dx} &= \color{#00000000}\lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= \color{#00000000}T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \color{#00000000}\text{Remember}: \frac{dy}{dx} &= \color{#00000000}\lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \color{#00000000}\text{Remember}: \frac{dy}{dx} &= \color{#00000000}\lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h} \\
+          &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \color{#00000000}\Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \color{#00000000}\quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>
+          Narrative with History Type 2
+        </p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
+          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
+          &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
+
       <section>
         <h1>Deriving Modes</h1>
         <h2>Solutions for 1D Wave</h2>
@@ -498,7 +797,7 @@
             RR: "{\\bf R}"
           },
           packages: {
-            '[+]': ['cancel']
+            '[+]': ['cancel', 'color']
           }
         }
       },
