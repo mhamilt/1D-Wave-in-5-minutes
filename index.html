@@ -20,7 +20,7 @@
     }
 
     .equation-summary * {
-      font-size: 20px;
+      font-size: 30px;
     }
 
     .hidden {
@@ -65,6 +65,11 @@
         <p>
           Show in tiny detail
         </p>
+      </section>
+
+      <section data-background-iframe="sketches/fd-plate/">
+        <h2>Finite Difference Plate</h2>
+        <!-- <iframe data-src="sketches/fd-plate/" ></iframe> -->
       </section>
       <section data-transition='fade'>
         <p>
@@ -256,7 +261,6 @@
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
           &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
           \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
-          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
           &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \end{aligned}
           \]
@@ -272,7 +276,6 @@
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
           &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
           \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
-          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
           &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \end{aligned}
@@ -280,18 +283,14 @@
         </p>
       </section>
       <section data-transition='fade' data-auto-animate>
-        <p>
-          Narrative with History type 1
-        </p>
         <p class="equation-summary">
           \[\begin{aligned}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
           &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
           \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
-          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
           &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
-          \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x)}{\partial x^2} \\
           \end{aligned}
           \]
         </p>
@@ -433,7 +432,6 @@
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
           &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
           \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
-          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
           &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
@@ -451,7 +449,6 @@
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
           &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
           \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
-          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
           &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \color{#00000000}\quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
@@ -459,9 +456,6 @@
         </p>
       </section>
       <section data-transition='fade' data-auto-animate>
-        <p>
-          Narrative with History Type 2
-        </p>
         <p class="equation-summary">
           \[\begin{aligned}
           \require{color}
@@ -469,7 +463,6 @@
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
           &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
           \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
-          &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
           &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
@@ -624,150 +617,6 @@
       <section>
         <h1>Visualising modes</h1>
       </section>
-      <section>
-        <p>
-          <i class="fragment" data-fragment-index="2">$\dot{x}$</i>
-          <i class="fragment" data-fragment-index="1">$m\ddot{x} = -kx$</i>
-          <i class="fragment" data-fragment-index="2">$\dot{x}$</i>
-        </p>
-        <p class="fragment">$\frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) = -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right)$</p>
-        <p class="fragment">$\frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) = 0 \qquad \qquad \qquad \quad \ \ \ $</p>
-
-        <div class="r-stack fragment">
-          <p class="fragment fade-in-then-out">$ \ \ \ \ \ \ \frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right) = 0 \\[14pt] $</p>
-          <!-- <p class="fragment fade-in-then-out">$\underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{}} = 0 \qquad \qquad \qquad \ \ \ \ $</p> -->
-          <p class="fragment fade-in-then-out">$\underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{Looks familiar}} = 0 \qquad \qquad \qquad \quad $</p>
-          <!-- <p class="fragment">$\underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\frac{dE}{dt}} = 0 \qquad \qquad \qquad \quad $</p> -->
-          <p class="fragment grow">$\frac{d}{dt}(\underbrace{\frac{1}{2}m\dot{x}^{2}}_{E_k} + \frac{1}{2}kx^{2} ) = 0 \qquad \qquad \qquad \quad $</p>
-        </div>
-        <!-- <p class="fragment">$\frac{dE}{dt} = 0$</p>
-        <p class="fragment">$E = \underbrace{\frac{1}{2}m\dot{x}^{2}}_{E_k} + \underbrace{\frac{1}{2}kx^{2}}_{E_p}$</p> -->
-      </section>
-      <!-- <section>
-        <div class="r-stack">
-          <img class="fragment" src="https://placekitten.com/450/300" width="450" height="300">
-          <img class="fragment" src="https://placekitten.com/300/450" width="300" height="450">
-          <img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
-        </div>
-      </section> -->
-      <section data-transition='fade'>
-        <p>
-          $$
-          m\ddot{x} = -kx
-          $$
-        </p>
-      </section>
-      <section data-transition='fade'>
-        <p>
-          $$
-
-          $$
-        </p>
-      </section>
-      <section data-transition='none'>
-        <p>
-          $$
-
-          m\ddot{x}\dot{x} = -kx\dot{x} \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) = -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right)
-
-          $$
-        </p>
-      </section>
-      <section data-transition='none'>
-
-        $$
-        m\ddot{x}\dot{x} = -kx\dot{x} \\
-        \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) = -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
-        \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) = 0 \qquad \qquad \qquad \qquad \ \
-        $$
-
-      </section>
-      <section data-transition='none'>
-        <p>
-          $$
-          \begin{aligned}
-          \qquad \qquad \quad m\ddot{x}\dot{x} &= -kx\dot{x}
-          \end{aligned}
-          $$
-        </p>
-      </section>
-      <section data-transition='none'>
-        <p>
-          $$
-          \begin{aligned}
-          \qquad \qquad \qquad \quad m\ddot{x}\dot{x} &= -kx\dot{x} \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right)
-          \end{aligned}
-          $$
-        </p>
-      </section>
-      <section data-transition='none'>
-        <p>
-          $$
-          \begin{aligned}
-          m\ddot{x}\dot{x} &= -kx\dot{x} \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0
-          \end{aligned}
-          $$
-        </p>
-      </section>
-      <section data-transition='none'>
-        <p>
-          $$
-          \begin{aligned}
-          m\ddot{x}\dot{x} &= -kx\dot{x} \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0 \\
-          \frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right) &= 0
-          \end{aligned}
-          $$
-        </p>
-      </section>
-      <section data-transition='none'>
-        <p>
-          $$
-          \begin{aligned}
-          m\ddot{x}\dot{x} &= -kx\dot{x} \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0 \\
-          \underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{Looks familiar}} &= 0
-          \end{aligned}
-          $$
-        </p>
-      </section>
-      <section data-transition='none'>
-        <p>
-          $$
-          \begin{aligned}
-          m\ddot{x}\dot{x} &= -kx\dot{x} \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0 \\
-          \underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{Looks familiar}} &= 0 \\
-          \frac{dE}{dt} &= 0
-          \end{aligned}
-          $$
-        </p>
-      </section>
-      <section data-transition='none'>
-        <p>
-          $$
-          \begin{aligned}
-          m\ddot{x}\dot{x} &= -kx\dot{x} \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) &= -\frac{k}{2}\frac{d}{dt}\left(x^{2} \right) \\
-          \frac{m}{2}\frac{d}{dt}\left(\dot{x}^{2} \right) + \frac{k}{2}\frac{d}{dt}\left(x^{2} \right) &= 0 \\
-          \underbrace{\frac{d}{dt}\left(\frac{1}{2}m\dot{x}^{2} + \frac{1}{2}kx^{2} \right)}_{\text{Looks familiar}} &= 0 \\
-          \frac{dE}{dt} &= 0 \\
-          E &= \underbrace{\frac{1}{2}m\dot{x}^{2}}_{E_k} + \underbrace{\frac{1}{2}kx^{2}}_{E_p}
-          \end{aligned}
-          $$
-        </p>
-      </section>
-      <!-- <section>Slide 2</section> -->
-      <!-- <section>
-        <iframe data-src="https://hakim.se" data-preload></iframe>
-      </section> -->
     </div>
   </div>
 
