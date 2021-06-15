@@ -471,9 +471,22 @@
       </section>
 
       <section>
-        <h1>Deriving Modes</h1>
-        <h2>Solutions for 1D Wave</h2>
-        <p>
+        <h5>Deriving Modes: Solutions for 1D Wave</h5>
+        <p class="equation-summary">
+          \[
+          \begin{aligned}
+          \require{color}
+          \require{cancel}
+          y(x, t) &= y(x)e^{i\omega t} \Rightarrow \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          y(x)(i\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \\
+          y(x)(-\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t} \text{ or } \times \frac{1}{c^2e^{i\omega t}}) \\
+          y(x)\frac{(-\omega)^2}{c^2}\cancel{e^{i\omega t}} &= \cancel{c^2}\frac{\partial^2y}{\partial x^2}\cancel{e^{i\omega t}} \\
+          y(x)\frac{(-\omega)^2}{c^2} &= \frac{\partial^2y}{\partial x^2} \\
+          \frac{\partial^2y}{\partial x^2} &= y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+          \end{aligned}
+          \]
+        </p>
+        <!-- <p>
           $y(x, t) = y(x)e^{i\omega t}$ into $\frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y(x_1)}{\partial x^2}$
         </p>
         <p>
@@ -490,11 +503,24 @@
         </p>
         <p>
           $\frac{\partial^2y}{\partial x^2} = y(x)frac{(-\omega)^2}{c^2}$ : Equation of Motion (Time Harmonic)
-        </p>
+        </p> -->
       </section>
       <section data-transition='fade'>
         <h1>Deriving Modes</h1>
         <h2>Solutions for Time Harmonic</h2>
+        <p class="equation-summary">
+          \[
+          \begin{aligned}
+          \require{color}
+          \require{cancel}
+          \frac{\partial^2y}{\partial x^2} &= y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+          y &= A e^{ikx} + B e^{ikx} \text {General Solution } \\
+          k &\triangleq \frac{\tau}{\lambda}\\
+          \end{aligned}
+          \]
+
+        </p>
+        <p>'Spatial angular frequency' or 'angular wave number' (number of equal phase locations per meter)</p>
         <p>
           $\frac{\partial^2y}{\partial x^2} = y(x)frac{(-\omega)^2}{c^2}$ : Equation of Motion (Time Harmonic)
         </p>
@@ -547,10 +573,28 @@
         <p>
           Assumption at ends of string: $y(0,t) = 0$ and $y(L,t) = 0$ $∀t$ (rigid condition)
         </p>
-        <p>
-          $y(x,t) = Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)}$
+        </section>
+        <section data-transition='fade'>
+        <p class="equation-summary">
+          \[
+          \begin{aligned}
+          \require{color}
+          \require{cancel}
+          y(x,t) &= Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)} \\
+          y(0,t) &= Ae^{i(\omega t + k0)} + Be^{i(\omega t - k0)} \\
+          y(0,t) &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
+          Ae^{i(\omega t)} &= -Be^{i(\omega t)} \\
+          A\cancel{e^{i(\omega t)}} &= -B\cancel{e^{i(\omega t)}} \\
+          A &= -B \\
+          y(x,t) &= Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)} \\
+          y(x,t) &= Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
+          y(x,t) &= Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+          y(x,t) &= -2iAe^{i\omega t}sinkx: \text{ if } sinkx = 0 \text{ then } y(x,t) = 0 \\
+          \end{aligned}
+          \]
+
         </p>
-        <p>
+        <!-- <p>
           $y(0,t) = Ae^{i(\omega t + k0)} + Be^{i(\omega t - k0)}$
         </p>
         <p>
@@ -585,33 +629,22 @@
         </p>
         <p>
           $y(x,t) = -2iAe^{i\omega t}sinkx$: if $sinkx = 0$ then $y(x,t) = 0$
-        </p>
+        </p> -->
       </section>
       <section data-transition='fade'>
         <h2>The Other Boundary</h2>
-        <p>
-          $y(L,t) = 0$
-        </p>
-        <p>
-          $y(x,t) = -2iAe^{i\omega t}sinkx$
-        </p>
-        <p>
-          $y(L,t) = -2iAe^{i\omega t}sinkL = 0$
-        </p>
-        <p>
-          if $sinkL = 0$ then $kL$ must be an integer muliple of $\pi$ i.e. $kL = n\pi$
-        </p>
-        <p>
-          $kL = n\pi$ : $k = \frac{\omega}{c}$
-        </p>
-        <p>
-          $\frac{\omega}{c}L = n\pi$
-        </p>
-        <p>
-          $\omega = \frac{n\pi c}{L}$
-        </p>
-        <p>
-          $\omega_n = \frac{n\pi c}{L}$
+        <p>if $sinkL = 0$ then $kL$ must be an integer muliple of $\pi$ i.e. $kL = n\pi$</p>
+        <p class="equation-summary">
+          \[\begin{aligned}
+          \require{color}
+          y(L,t) &= 0 \\
+          y(x,t) &= -2iAe^{i\omega t}sinkx \\
+          kL &= n\pi$ : $k = \frac{\omega}{c} \\
+          \frac{\omega}{c}L &= n\pi \\
+          \omega &= \frac{n\pi c}{L} \\
+          \omega_n &= \frac{n\pi c}{L} \\
+          \end{aligned}
+          \]
         </p>
       </section>
       <section>
