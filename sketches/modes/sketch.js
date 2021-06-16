@@ -47,13 +47,11 @@ let pPos = 10;
 let origin;
 let xMax;
 let yMax;
-
-let xAxisLabel;
 let yAxisLabel;
-
+let xAxisLabel;
 function setup()
 {
-  createCanvas(400, 200);
+  createCanvas(windowWidth, windowHeight);
   background(220);
   origin = new Point(50, height/2)
   xMax = width - origin.x;
@@ -257,18 +255,27 @@ function animateModes()
 {
   if ( typeof animateModes.animatePhase === 'undefined' ) animateModes.animatePhase = 0.0;
   if ( typeof animateModes.numHarmonics === 'undefined' ) animateModes.numHarmonics = 2.0;
-  
+  if ( typeof animateModes.modeLabel === 'undefined' ) 
+  {
+    animateModes.modeLabel = createP(String.raw `\(\omega_{0}\)`);
+    animateModes.modeLabel.position(100, 10);
+    MathJax.typeset()
+  }
+
+
   animateModes.animatePhase += 0.01;
   if(animateModes.animatePhase > 1.0) 
   {
     animateModes.animatePhase -= 1.0;
     animateModes.numHarmonics++;
     if(animateModes.numHarmonics > 6)animateModes.numHarmonics = 2.0;
+    animateModes.modeLabel.html(`\\(\\omega_{${animateModes.numHarmonics-2}}\\)`)
+    MathJax.typeset()
   }
   let steps = 100;
   let stepSize = xMax / steps;
   let amplitude = xMax * 0.2;
-
+  
   for (let h = 1; h < animateModes.numHarmonics; h++)
   {
     let gain = sin(TAU * animateModes.animatePhase * h) / h;
@@ -278,6 +285,16 @@ function animateModes()
       let y1 = gain * amplitude * sin(phaseDelta * i);
       let y2 = gain * amplitude * sin(phaseDelta * (i + 1));
       line(stepSize * i , y1, stepSize * (i + 1), y2);
+    }
+    
+    let nodeSize = width * 0.023;
+    
+    for (let i = 1; i <= h; i++)
+    {
+      for (let j = 1; j <= i; j++)
+      {
+        circle(j * xMax / i, 0, nodeSize);
+      }
     }
   }
 }

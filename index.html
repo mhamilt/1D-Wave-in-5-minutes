@@ -57,13 +57,6 @@
           </ul>
         </p>
       </section>
-      <!-- <section data-auto-animate>
-        <section data-auto-animate>
-          <div data-id="box" style="height: 10em; background: white;">
-            <img src="img/wave-forces.svg"></img>
-          </div>
-        </section>
-      </section> -->
       <section data-transition='fade' data-auto-animate>
         <p><b>Deriving Equation of Motion</b></p>
         <p>
@@ -79,7 +72,7 @@
 
       <section data-transition='fade' data-auto-animate>
         <p>
-          Deriving Quation of Motion
+          Deriving the Equation of Motion
         </p>
         <img data-id="graph" src="img/wave-forces.svg" style="height: 6em;  background: white;"></img>
         <div class="r-stack">
@@ -122,7 +115,7 @@
       </section>
       <section data-transition='fade' data-auto-animate>
         <p>
-          Deriving Quation of Motion
+          Deriving the Equation of Motion
         </p>
         <img data-id="graph" src="img/wave-forces.svg" style="height: 6em;  background: white;"></img>
         <div class="r-stack">
@@ -165,32 +158,15 @@
         </div>
       </section>
 
-      <!-- <section data-transition='fade' data-auto-animate>
-        <p class="equation-summary">
-          \[\begin{aligned}
-          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
-          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
-          &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
-          \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x)}{\partial x^2} \\
-          \end{aligned}
-          \]
-        </p>
-      </section> -->
       <section data-auto-animate>
-        <p>
-          Narrative with History Type 2
-        </p>
+        <p> Deriving the Equation of Motion </p>
         <p data-id="eq1" class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \color{#00000000}\rho\frac{\partial^2y}{\partial t^2}&= \color{#00000000}T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= \color{#00000000}T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \color{#00000000}\text{Remember}: \frac{dy}{dx} &= \color{#00000000}\lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= \color{#00000000}T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h} \\
           &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
-          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
           \]
@@ -198,17 +174,15 @@
       </section>
       <section  data-auto-animate>
         <p>
-          Narrative with History Type 2
+          Deriving the Equation of Motion
         </p>
         <p data-id="eq1" class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= \color{#00000000}T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \color{#00000000}\text{Remember}: \frac{dy}{dx} &= \color{#00000000}\lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= \color{#00000000}T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h} \\
           &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
-          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
           \]
@@ -216,17 +190,15 @@
       </section>
       <section data-transition='fade' data-auto-animate>
         <p>
-          Narrative with History Type 2
+          Deriving the Equation of Motion
         </p>
         <p class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \color{#00000000}\text{Remember}: \frac{dy}{dx} &= \color{#00000000}\lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h} \\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \color{#00000000}\quad; \frac{dy}{dx} = \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h} \\
           &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
-          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
           \]
@@ -234,17 +206,15 @@
       </section>
       <section data-transition='fade' data-auto-animate>
         <p>
-          Narrative with History Type 2
+          Deriving the Equation of Motion
         </p>
         <p class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h} \\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h} \\
           &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
-          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
           \]
@@ -252,17 +222,15 @@
       </section>
       <section data-transition='fade' data-auto-animate>
         <p>
-          Narrative with History Type 2
+          Deriving the Equation of Motion
         </p>
         <p class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
           &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
-          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
           \]
@@ -270,17 +238,15 @@
       </section>
       <section data-transition='fade' data-auto-animate>
         <p>
-          Narrative with History Type 2
+          Deriving the Equation of Motion
         </p>
         <p class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
           &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \color{#00000000}\Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
-          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
           \]
@@ -288,17 +254,15 @@
       </section>
       <section data-transition='fade' data-auto-animate>
         <p>
-          Narrative with History Type 2
+          Deriving the Equation of Motion
         </p>
         <p class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
           &= T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
-          &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
           \]
@@ -306,15 +270,14 @@
       </section>
       <section data-transition='fade' data-auto-animate>
         <p>
-          Narrative with History Type 2
+          Deriving the Equation of Motion
         </p>
         <p class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
           &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
@@ -323,15 +286,14 @@
       </section>
       <section data-transition='fade' data-auto-animate>
         <p>
-          Narrative with History Type 2
+          Deriving the Equation of Motion
         </p>
         <p class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
           &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \color{#00000000}\quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
@@ -339,247 +301,331 @@
         </p>
       </section>
       <section data-transition='fade' data-auto-animate>
+        <p>
+          Deriving the Equation of Motion
+        </p>
         <p class="equation-summary">
+
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
-          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \text{Remember}: \frac{dy}{dx} &= \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
           &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
           \]
         </p>
       </section>
-
-      <section>
-        <h5>Deriving Modes: Solutions for 1D Wave</h5>
-        <p class="equation-summary">
-          \[
-          \begin{aligned}
-          \require{color}
-          \require{cancel}
-          y(x, t) &= y(x)e^{i\omega t} \Rightarrow \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y(x_1)}{\partial x^2} \\
-          y(x)(i\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \\
-          y(x)(-\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t} \text{ or } \times \frac{1}{c^2e^{i\omega t}}) \\
-          y(x)\frac{(-\omega)^2}{c^2}\cancel{e^{i\omega t}} &= \cancel{c^2}\frac{\partial^2y}{\partial x^2}\cancel{e^{i\omega t}} \\
-          y(x)\frac{(-\omega)^2}{c^2} &= \frac{\partial^2y}{\partial x^2} \\
-          \frac{\partial^2y}{\partial x^2} &= y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
-          \end{aligned}
-          \]
-        </p>
-        <!-- <p>
-          $y(x, t) = y(x)e^{i\omega t}$ into $\frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y(x_1)}{\partial x^2}$
-        </p>
+      <section data-transition='fade' data-auto-animate>
         <p>
-          $y(x)(i\omega)^2e^{i\omega t} = c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t}$
+          Deriving the Equation of Motion
         </p>
-        <p>
-          $y(x)(-\omega)^2e^{i\omega t} = c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t}$ divide $c^2e^{i\omega t}$ or multiply $\frac{1}{c^2e^{i\omega t}}$
-        </p>
-        <p>
-          $\require{cancel}y(x)frac{(-\omega)^2}{c^2}\cancel{e^{i\omega t}} = \cancel{c^2}\frac{\partial^2y}{\partial x^2}\cancel{e^{i\omega t}}$
-        </p>
-        <p>
-          $y(x)frac{(-\omega)^2}{c^2} = \frac{\partial^2y}{\partial x^2}$
-        </p>
-        <p>
-          $\frac{\partial^2y}{\partial x^2} = y(x)frac{(-\omega)^2}{c^2}$ : Equation of Motion (Time Harmonic)
-        </p> -->
-      </section>
-      <section data-transition='fade'>
-        <h1>Deriving Modes</h1>
-        <h2>Solutions for Time Harmonic</h2>
-        <p class="equation-summary">
-          \[
-          \begin{aligned}
-          \require{color}
-          \require{cancel}
-          \frac{\partial^2y}{\partial x^2} &= y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
-          y &= A e^{ikx} + B e^{ikx} \text {General Solution } \\
-          k &\triangleq \frac{\tau}{\lambda}\\
-          \end{aligned}
-          \]
-
-        </p>
-        <p>'Spatial angular frequency' or 'angular wave number' (number of equal phase locations per meter)</p>
-        <p>
-          $\frac{\partial^2y}{\partial x^2} = y(x)frac{(-\omega)^2}{c^2}$ : Equation of Motion (Time Harmonic)
-        </p>
-        <p>
-          $y = A e^{ikx} + B e^{ikx}$ : General Solution $k \triangleq \frac{\tau}{\lambda}$ 'Spatial angular frequency' or 'angular wave number' (number of equal phase locations per meter)
-        </p>
-        <p>
-          $\frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) = \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right)$
-        </p>
-        <p>
-          $-k^2A e^{ikx} - k^2 B e^{-ikx} = \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right)$
-        </p>
-        <p>
-          $-k^2\left(A e^{ikx} + B e^{-ikx}\right) = \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right)$ divide by $A e^{ikx} + B e^{ikx}$
-        </p>
-        <p>
-          $-k^2 = \frac{-\omega^2}{c^2}$
-        </p>
-        <p>
-          $-k^2c^2 = -\omega^2$
-        </p>
-        <p>
-          $k^2c^2 = \omega^2$
-        </p>
-        <p>
-          $\omega^2 = k^2c^2$ sqrt both sides
-        </p>
-        <p>
-          $\omega = kc$: dispersion relation and $k = \frac{\omega}{c}$
-        </p>
-        <p>
-          $y(x,t) = y(x)e^{i\omega t}$
-        </p>
-        <p>
-          $y(x,t) = Ae^{ik t}e^{i\omega t} + Be^{-ik t}e^{i\omega t}$
-        </p>
-        <p>
-          $y(x,t) = Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)}$
-        </p>
-      </section>
-      <section data-transition='fade'>
-        <h1>Deriving Modes</h1>
-        <h2>Boundary conditions</h2>
-        <p>
-          String length has been infinite
-        </p>
-        <p>
-          What if string length is finite
-        </p>
-        <p>
-          Assumption at ends of string: $y(0,t) = 0$ and $y(L,t) = 0$ $∀t$ (rigid condition)
-        </p>
-        </section>
-        <section data-transition='fade'>
-        <p class="equation-summary">
-          \[
-          \begin{aligned}
-          \require{color}
-          \require{cancel}
-          y(x,t) &= Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)} \\
-          y(0,t) &= Ae^{i(\omega t + k0)} + Be^{i(\omega t - k0)} \\
-          y(0,t) &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
-          Ae^{i(\omega t)} &= -Be^{i(\omega t)} \\
-          A\cancel{e^{i(\omega t)}} &= -B\cancel{e^{i(\omega t)}} \\
-          A &= -B \\
-          y(x,t) &= Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)} \\
-          y(x,t) &= Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-          y(x,t) &= Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-          y(x,t) &= -2iAe^{i\omega t}sinkx: \text{ if } sinkx = 0 \text{ then } y(x,t) = 0 \\
-          \end{aligned}
-          \]
-
-        </p>
-        <!-- <p>
-          $y(0,t) = Ae^{i(\omega t + k0)} + Be^{i(\omega t - k0)}$
-        </p>
-        <p>
-          $y(0,t) = Ae^{i(\omega t)} + Be^{i(\omega t)} = 0$
-        </p>
-        <p>
-          $y(0,t) = Ae^{i(\omega t)} + Be^{i(\omega t)} = 0$
-        </p>
-        <p>
-          $Ae^{i(\omega t)} = -Be^{i(\omega t)}$
-        </p>
-        <p>
-          $\require{cancel}A\cancel{e^{i(\omega t)}} = -B\cancel{e^{i(\omega t)}}$
-        </p>
-        <p>
-          $\require{cancel}A\cancel{e^{i(\omega t)}} = -B\cancel{e^{i(\omega t)}}$
-        </p>
-        <p>
-          $A = -B$
-        </p>
-        <p>
-          $y(x,t) = Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)}$
-        </p>
-        <p>
-          $y(x,t) = Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)}$
-        </p>
-        <p>
-          $y(x,t) = Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right)}$ Remember: $\frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta$
-        </p>
-        <p>
-          $y(x,t) = -2iAe^{i\omega t}sinkx$: if $sinkx = 0$ then $y(x,t) = 0$
-        </p>
-        <p>
-          $y(x,t) = -2iAe^{i\omega t}sinkx$: if $sinkx = 0$ then $y(x,t) = 0$
-        </p> -->
-      </section>
-      <section data-transition='fade'>
-        <h2>The Other Boundary</h2>
-        <p>if $sinkL = 0$ then $kL$ must be an integer muliple of $\pi$ i.e. $kL = n\pi$</p>
         <p class="equation-summary">
           \[\begin{aligned}
           \require{color}
-          y(L,t) &= 0 \\
-          y(x,t) &= -2iAe^{i\omega t}sinkx \\
-          kL &= n\pi$ : $k = \frac{\omega}{c} \\
-          \frac{\omega}{c}L &= n\pi \\
-          \omega &= \frac{n\pi c}{L} \\
-          \omega_n &= \frac{n\pi c}{L} \\
+          \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
+          \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
+          &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \quad; \frac{dy}{dx} = \lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          &= T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
+          \frac{\partial^2y}{\partial t^2} &= c^2\frac{\partial^2 y(x)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
           \end{aligned}
           \]
         </p>
       </section>
-      <section>
-        <h1>Visualising modes</h1>
-      </section>
-      <section >
-        <section >
+      <section data-transition='fade' data-auto-animate>
         <p>
-          More information on this slide deck see: github.com/mhamilt/1D-Wave-in-5-Minutes
+          Deriving the Equation of Motion
         </p>
+        <p>
+          \[
+          \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 }{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+          \]
+        </p>
+      </section>
+
+      <section data-transition='fade' data-auto-animate>
+        <section data-transition='fade' data-auto-animate>
+          <p>Deriving Modes: Solutions for 1D Wave</p>
+          <p class="equation-summary">
+            \[
+            \begin{aligned}
+            \require{color}
+            \require{cancel}
+            y(x, t) &= y(x)e^{i\omega t} \Rightarrow \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2} \\
+            \color{#00000000}y(x)(i\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \\
+            \color{#00000000}y(x)(-\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t} \text{ or } \times \frac{1}{c^2e^{i\omega t}}) \\
+            \color{#00000000}y(x)(-\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t} \text{ or } \times \frac{1}{c^2e^{i\omega t}}) \\
+
+            \color{#00000000}\frac{\partial^2y}{\partial x^2} &= \color{#00000000}y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+            \end{aligned}
+            \]
+          </p>
         </section>
-        <section data-background-iframe="sketches/fd-plate/">
-          <h2>Finite Difference Plate</h2>
+        <section data-transition='fade' data-auto-animate>
+          <p>Deriving Modes: Solutions for 1D Wave</p>
+          <p class="equation-summary">
+            \[
+            \begin{aligned}
+            \require{color}
+            \require{cancel}
+            y(x, t) &= y(x)e^{i\omega t} \Rightarrow \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2} \\
+            y(x)(i\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y(x)}{\partial x^2}e^{i\omega t} \\
+            \color{#00000000}y(x)(-\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t} \text{ or } \times \frac{1}{c^2e^{i\omega t}}) \\
+            \color{#00000000}y(x)(-\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t} \text{ or } \times \frac{1}{c^2e^{i\omega t}}) \\
+
+            \color{#00000000}\frac{\partial^2y}{\partial x^2} &= \color{#00000000}y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+            \end{aligned}
+            \]
+          </p>
+        </section>
+        <section data-transition='fade' data-auto-animate>
+          <p>Deriving Modes: Solutions for 1D Wave</p>
+          <p class="equation-summary">
+            \[
+            \begin{aligned}
+            \require{color}
+            \require{cancel}
+            y(x, t) &= y(x)e^{i\omega t} \Rightarrow \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2} \\
+            y(x)(i\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y(x)}{\partial x^2}e^{i\omega t} \\
+            y(x)(-\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \color{#00000000}\quad (\div \ c^2e^{i\omega t} \text{ or } \times \frac{1}{c^2e^{i\omega t}}) \\
+            \color{#00000000}y(x)(-\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \\
+
+            \color{#00000000}\frac{\partial^2y}{\partial x^2} &= \color{#00000000}y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+            \end{aligned}
+            \]
+          </p>
+        </section>
+        <section data-transition='fade' data-auto-animate>
+          <p>Deriving Modes: Solutions for 1D Wave</p>
+          <p class="equation-summary">
+            \[
+            \begin{aligned}
+            \require{color}
+            \require{cancel}
+            y(x, t) &= y(x)e^{i\omega t} \Rightarrow \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2} \\
+            y(x)(i\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y(x)}{\partial x^2}e^{i\omega t} \\
+            y(x)(-\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t}) \\
+            \color{#00000000}y(x)(-\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \color{#00000000}\quad (\div \ c^2e^{i\omega t}) \\
+            \color{#00000000}\frac{\partial^2y}{\partial x^2} &= \color{#00000000}y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+            \end{aligned}
+            \]
+          </p>
+        </section>
+        <section data-transition='fade' data-auto-animate>
+          <p>Deriving Modes: Solutions for 1D Wave</p>
+          <p class="equation-summary">
+            \[
+            \begin{aligned}
+            \require{color}
+            \require{cancel}
+            y(x, t) &= y(x)e^{i\omega t} \Rightarrow \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2} \\
+            y(x)(i\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y(x)}{\partial x^2}e^{i\omega t} \\
+            y(x)(-\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t}) \\
+            y(x)\frac{(-\omega)^2}{c^2}\color{#00000000}e^{i\omega t} &= \color{#00000000}c^2\color{#FFFFFF}\frac{\partial^2y}{\partial x^2}\color{#00000000}e^{i\omega t} \color{#00000000}\quad (\div \ c^2e^{i\omega t}) \\
+            \color{#00000000}\frac{\partial^2y}{\partial x^2} &= \color{#00000000}y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+            \end{aligned}
+            \]
+          </p>
         </section>
       </section>
-    </div>
-  </div>
+      <section data-transition='fade' data-auto-animate>
+        <p>Deriving Modes: Solutions for 1D Wave</p>
+        <p class="equation-summary">
+          \[
+          \begin{aligned}
+          \require{color}
+          \require{cancel}
+          y(x, t) &= y(x)e^{i\omega t} \Rightarrow \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2} \\
+          y(x)(i\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y(x)}{\partial x^2}e^{i\omega t} \\
+          y(x)(-\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t}) \\
+          y(x)\frac{(-\omega)^2}{c^2}\color{#00000000}e^{i\omega t} &= \color{#00000000}c^2\color{#FFFFFF}\frac{\partial^2y}{\partial x^2}\color{#00000000}e^{i\omega t} \color{#00000000}\quad (\div \ c^2e^{i\omega t}) \\
+          \frac{\partial^2y}{\partial x^2} &= y(x)\frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
 
-  <script src="dist/reveal.js"></script>
-  <script src="plugin/notes/notes.js"></script>
-  <script src="plugin/markdown/markdown.js"></script>
-  <script src="plugin/highlight/highlight.js"></script>
-  <script src="plugin/math/math.js"></script>
+      <section data-transition='fade' data-auto-animate>
+        <h1>Deriving Modes</h1>
+        <h2>Solutions for Time Harmonic<h2>
+        </section>
+        <section data-transition='fade' data-auto-animate>
+          <p>Deriving Modes</p>
+          <p>Solutions for Time Harmonic<p>
+            <p class="equation-summary">
+              \[
+              \frac{\partial^2y}{\partial x^2} = y(x)\frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+              \]
+            </p>
+            <p> General Solution:</p>
+            <p>\(y = A e^{ikx} + B e^{ikx} ;\quad k \triangleq \frac{\tau}{\lambda}\)</p>
+          </section>
+          <section data-transition='fade'>
+            <p class="equation-summary">
+              \[
+              \begin{aligned}
+              \require{color}
+              \require{cancel}
+              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
+              -k^2A e^{ikx} - k^2 B e^{-ikx} &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
+              -k^2\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \qquad (\div A e^{ikx} + B e^{ikx}) \\
+              -k^2 &= \frac{-\omega^2}{c^2} \\
+              -k^2c^2 &= -\omega^2 \\
+              k^2c^2 &= \omega^2 \\
+              \omega^2 &= k^2c^2 \\
+              \omega^{\color{#00000000}2} &= k^{\color{#00000000}2}c^{\color{#00000000}2} \\
+              \end{aligned}
+              \]
+            </p>
+          </section>
+          <section data-transition='fade'>
+            <p>'Spatial angular frequency' or 'angular wave number' (number of equal phase locations per meter)</p>
+            <p>
+              $\frac{\partial^2y}{\partial x^2} = y(x)frac{(-\omega)^2}{c^2}$ : Equation of Motion (Time Harmonic)
+            </p>
+            <p>
+              $y = A e^{ikx} + B e^{ikx}$ : General Solution $k \triangleq \frac{\tau}{\lambda}$ 'Spatial angular frequency' or 'angular wave number' (number of equal phase locations per meter)
+            </p>
+            <p>
+              $\frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) = \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right)$
+            </p>
+            <p>
+              $-k^2A e^{ikx} - k^2 B e^{-ikx} = \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right)$
+            </p>
+            <p>
+              $-k^2\left(A e^{ikx} + B e^{-ikx}\right) = \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right)$ divide by $A e^{ikx} + B e^{ikx}$
+            </p>
+            <p>
+              $-k^2 = \frac{-\omega^2}{c^2}$
+            </p>
+            <p>
+              $-k^2c^2 = -\omega^2$
+            </p>
+            <p>
+              $k^2c^2 = \omega^2$
+            </p>
+            <p>
+              $\omega^2 = k^2c^2$ sqrt both sides
+            </p>
+          </section>
+          <section data-transition='fade'>
+            <p>Dispersion Relation</p>
+            <p> $\omega = kc$</p>
+            <p>$k = \frac{\omega}{c}$</p>
+            </section>
+            <section data-transition='fade'>
+              <p>Putting it all together</p>
+            <p>
+              \[
+              \begin{aligned}
+              y(x,t) &= y(x)e^{i\omega t} \\
+              &= Ae^{ik t}e^{i\omega t} + Be^{-ik t}e^{i\omega t} \\
+              &= Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)} \\
+              \end{aligned}
+              \]
+            </p>
+          </section>
+          <section data-transition='fade'>
+            <h1>Deriving Modes</h1>
+            <h2>Boundary conditions</h2>
+            <p>
+              String length has been infinite
+            </p>
+            <p>
+              What if string length is finite
+            </p>
+            <p>
+              Assumption at ends of string: $y(0,t) = 0$ and $y(L,t) = 0$ $∀t$ (rigid condition)
+            </p>
+          </section>
+          <section data-transition='fade'>
+            <p class="equation-summary">
+              \[
+              \begin{aligned}
+              \require{color}
+              \require{cancel}
+              y(x,t) &= Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)} \\
+              y(0,t) &= Ae^{i(\omega t + k0)} + Be^{i(\omega t - k0)} \\
+              y(0,t) &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
+              Ae^{i(\omega t)} &= -Be^{i(\omega t)} \\
+              A\cancel{e^{i(\omega t)}} &= -B\cancel{e^{i(\omega t)}} \\
+              A &= -B \\
+              y(x,t) &= Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)} \\
+              y(x,t) &= Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
+              y(x,t) &= Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              y(x,t) &= -2iAe^{i\omega t}sinkx: \text{ if } sinkx = 0 \text{ then } y(x,t) = 0 \\
+              \end{aligned}
+              \]
+            </p>
+          </section>
+          <section data-transition='fade'>
+            <h2>The Other Boundary</h2>
+            <p>if $sinkL = 0$ then $kL$ must be an integer muliple of $\pi$ i.e. $kL = n\pi$</p>
+            <p class="equation-summary">
+              \[\begin{aligned}
+              \require{color}
+              y(L,t) &= 0 \\
+              y(x,t) &= -2iAe^{i\omega t}sinkx \\
+              kL &= n\pi$ : $k = \frac{\omega}{c} \\
+              \frac{\omega}{c}L &= n\pi \\
+              \omega &= \frac{n\pi c}{L} \\
+              \omega_n &= \frac{n\pi c}{L} \\
+              \end{aligned}
+              \]
+            </p>
+          </section>
+          <section>
+            <p>Modes</p>
+            <iframe data-src="sketches/modes/" style="height: 6em; width: 50%;" data-preload></iframe>
+          </section>
+          <section >
+            <section >
+              <p>
+                More information on this slide deck see: github.com/mhamilt/1D-Wave-in-5-Minutes
+              </p>
+            </section>
+            <section data-background-iframe="sketches/fd-plate/">
+              <h2>Finite Difference Plate</h2>
+            </section>
+          </section>
+        </div>
+      </div>
 
-  <script>
-    // More info about initialization & config:
-    // - https://revealjs.com/initialization/
-    // - https://revealjs.com/config/
+      <script src="dist/reveal.js"></script>
+      <script src="plugin/notes/notes.js"></script>
+      <script src="plugin/markdown/markdown.js"></script>
+      <script src="plugin/highlight/highlight.js"></script>
+      <script src="plugin/math/math.js"></script>
+
+      <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
 
 
-    Reveal.initialize({
-      autoAnimateEasing: 'ease-out',
-      autoAnimateDuration: 0.8,
-      autoAnimateUnmatched: false,
-      hash: true,
-      math: {
-        mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
-        config: 'TeX-AMS_HTML-full',
-        // pass other options into `MathJax.Hub.Config()`
-        TeX: {
-          Macros: {
-            RR: "{\\bf R}"
-          },
-          packages: {
-            '[+]': ['cancel', 'color']
+      Reveal.initialize({
+        autoAnimateEasing: 'ease-out',
+        autoAnimateDuration: 0.8,
+        autoAnimateUnmatched: false,
+        hash: true,
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          // pass other options into `MathJax.Hub.Config()`
+          TeX: {
+            Macros: {
+              RR: "{\\bf R}"
+            },
+            packages: {
+              '[+]': ['cancel', 'color']
+            }
           }
-        }
-      },
-      // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
-    });
-  </script>
-</body>
+        },
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
+      });
+      </script>
+    </body>
 
-</html>
+    </html>
