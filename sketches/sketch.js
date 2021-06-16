@@ -129,15 +129,54 @@ function dottedSpline(pointArray, dotLength)
     line(x1,y1,x2,y2);
   }
 }
+
+/**
+* Draw line terminating with an arrow
+* @param {Point} start
+* @param {Point} end
+* @param {boolean} hasArrowStart
+* @param {boolean} hasArrowEnd
+*/
+function arrowLine(start, end, hasArrowStart, hasArrowEnd)
+{
+  line(start.x, start.y, end.x, end.y - 20);
+  // set angle of arrow
+  // set length of arrow
+  // get angle from origin
+  // calculate x and y components
+  // rotate by angle of line
+}
+
+/**
+* draw a bezier curve terminating in an arrow
+* @param {Array[Point]} pointArray
+* @param {boolean} hasArrowStart
+* @param {boolean} hasArrowEnd
+*/
+function arrowSpline(pointArray, hasArrowStart, hasArrowEnd)
+{
+  // set angle of arrow
+  // set length of arrow
+  // get angle from origin
+  // calculate x and y components
+  // rotate by angle of line from bezier end and bezier point 0.99
+
+}
+
 //-----------------------------------------------------------------------------
 let p;
 let pPos = 10;
 let origin;
+let xMax;
+let yMax;
+
 function setup()
 {
   createCanvas(400, 200);
   background(220);
   origin = new Point(50, height - 50)
+  xMax = width - origin.x;
+  yMax = origin.y;
   setupAxis(origin)
   drawAxis(origin);
   drawInfiniteString();
@@ -146,12 +185,6 @@ function setup()
 
 function draw()
 {
-  // p.position(pPos, 0);
-  // pPos++;
-  // if (pPos > (width - p.size().width)) {
-  //   pPos = 0;
-  // }
-  // rect(10, 10, 100, 100);
 }
 
 function mousePressed() {
@@ -183,4 +216,60 @@ function drawInfiniteString()
   // rotate line + and minus theta (or the angle of the arrow)
   line(bezierPoints[3].x,bezierPoints[3].y,bezierPoints[3].x - 20, bezierPoints[3].y - 20)
   line(bezierPoints[3].x,bezierPoints[3].y,bezierPoints[3].x - 30, bezierPoints[3].y + 1)
+}
+
+function drawSmallStringSection()
+{
+  // F_R and F_L arrows
+  // x-axis horizon
+  // theta arcs
+  // labels
+  // Tension arrows
+  // ticks and labels
+}
+
+function animateTransverseMotion()
+{
+  let steps = 100;
+  let stepSize = xMax / steps;
+  let periods = 2;
+  let phaseDelta = periods * TAU * stepSize / xMax;
+  for (lef i = 0; i < steps; i++)
+  {
+    line(
+      stepSize * i , sin(phaseDelta * i),
+      stepSize * i + 1, sin(phaseDelta * i + 1)
+    );
+  )
+}
+// draw sine multi phase sine
+// oscillate gain change over time
+}
+
+function animateLongitudanalMotion()
+{
+
+}
+
+function animateModes()
+{
+  // basically harmonic series
+}
+
+function drawWaveNumber()
+{
+  let steps = 200;
+  let stepSize = xMax / steps;
+  let freq = 2;
+  let phaseDelta = freq * TAU * stepSize / xMax;
+  for (lef i = 0; i < steps; i++)
+  {
+    line(
+      stepSize * i , sin(phaseDelta * i),
+      stepSize * i + 1, sin(phaseDelta * i + 1)
+    );
+  )
+
+  circle(xMax * 0.2, sin(freq * TAU * 0.2), 5);
+  circle(xMax * 0.2, sin(freq * TAU * 0.2), 5);
 }
