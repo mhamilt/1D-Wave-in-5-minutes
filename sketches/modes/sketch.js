@@ -255,6 +255,7 @@ function animateModes()
 {
   if ( typeof animateModes.animatePhase === 'undefined' ) animateModes.animatePhase = 0.0;
   if ( typeof animateModes.numHarmonics === 'undefined' ) animateModes.numHarmonics = 2.0;
+  if ( typeof animateModes.singlePlot === 'undefined' ) animateModes.singlePlot = 0;
   if ( typeof animateModes.modeLabel === 'undefined' ) 
   {
     animateModes.modeLabel = createP(String.raw `\(\omega_{0}\)`);
@@ -266,9 +267,14 @@ function animateModes()
   animateModes.animatePhase += 0.01;
   if(animateModes.animatePhase > 1.0) 
   {
+    
     animateModes.animatePhase -= 1.0;
     animateModes.numHarmonics++;
-    if(animateModes.numHarmonics > 6)animateModes.numHarmonics = 2.0;
+    if(animateModes.numHarmonics > 6)
+    {
+      animateModes.numHarmonics = 2.0;
+      animateModes.singlePlot = (animateModes.singlePlot)? 0:1;
+    }
     animateModes.modeLabel.html(`\\(\\omega_{${animateModes.numHarmonics-2}}\\)`)
     MathJax.typeset()
   }
@@ -276,7 +282,7 @@ function animateModes()
   let stepSize = xMax / steps;
   let amplitude = xMax * 0.2;
   
-  for (let h = 1; h < animateModes.numHarmonics; h++)
+  for (let h = ((animateModes.singlePlot)? 1:animateModes.numHarmonics-1); h < animateModes.numHarmonics; h++)
   {
     let gain = sin(TAU * animateModes.animatePhase * h) / h;
     let phaseDelta = h * TAU * stepSize / (2 * xMax);
@@ -289,7 +295,7 @@ function animateModes()
     
     let nodeSize = width * 0.023;
     
-    for (let i = 1; i <= h; i++)
+    for (let i = ((animateModes.singlePlot)? 1: h); i <= h; i++)
     {
       for (let j = 1; j <= i; j++)
       {
