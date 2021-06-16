@@ -27,11 +27,11 @@ function setup()
   createCanvas(windowWidth, windowHeight);
   background(220);
   origin = new Point(50, height/2)
-  xMax = width - origin.x;
+  xMax = (width - origin.x);
   yMax = origin.y;
   setupAxis(origin)
   drawAxis(origin);
-  // drawInfiniteString();
+  drawWaveNumber();
   
   MathJax.typeset()
 }
@@ -166,7 +166,13 @@ function arrowSpline(pointArray, hasArrowStart, hasArrowEnd)
   
 }
 
-
+function multiline(pointArray)
+{
+  for (let i = 0; i < pointArray.length - 1; i++) 
+  {
+    line(pointArray[i].x,pointArray[i].y,pointArray[i+1].x,pointArray[i+1].y);  
+  }
+}
 
 function drawInfiniteString()
 {
@@ -278,16 +284,38 @@ function animateLongitudanalMotion()
 
 function drawWaveNumber()
 {
-  let steps = 200;
-  let stepSize = xMax / steps;
-  let freq = 2;
-  let phaseDelta = freq * TAU * stepSize / xMax;
-  let amplitude = xMax* 1000;
-  for (let i = 0; i < steps; i++)
+  if ( typeof drawWaveNumber.nuLabel === 'undefined' ) 
   {
-    line(stepSize * i , amplitude * sin(phaseDelta * i), stepSize * i + 1, amplitude * sin(phaseDelta * i + 1));
+    animateModes.nuLabel = createP(String.raw `\(\tilde{\nu} = \frac{1}{\lambda} = 4m^{-1} \quad k = \frac{2\pi}{\lambda} = 8\pi m^{-1}\)`);
+    animateModes.nuLabel.position(width / 3, 0);
+    animateModes.nuLabel.style('font-size', '4vw');
+    animateModes.nuLabel.style('margin-top', '0');
+    animateModes.wnLabel = createP(String.raw `\(\lambda = \frac{1}{4}m\)`);
+    animateModes.wnLabel.position(width / 7, height/8);
+    animateModes.wnLabel.style('font-size', '4vw');
+    animateModes.wnLabel.style('margin-top', '0');
+    animateModes.lLabel = createP(String.raw `\(1m\)`);
+    animateModes.lLabel.position(width / 2, height/8);
+    animateModes.lLabel.style('font-size', '4vw');
+    animateModes.lLabel.style('margin-top', '0');
+    MathJax.typeset()
   }
   
-  // circle(xMax * 0.2, amplitudesin(freq * TAU * 0.2), 5);
-  // circle(xMax * 0.2, amplitudesin(freq * TAU * 0.2), 5);
+  let steps = 200;
+  let stepSize = xMax / steps;
+  let freq = 5;
+  let phaseDelta = freq * TAU * stepSize / xMax;
+  let amplitude = yMax * 0.45;
+  for (let i = 0; i < steps; i++)
+  {
+    line(stepSize * i , amplitude * sin(phaseDelta * i), stepSize * (i + 1), amplitude * sin(phaseDelta * (i + 1)));
+  }
+  
+  let period = xMax / freq;
+  for (let i = 0; i < freq; i++)
+  {
+    circle(period * 0.2 + i * period, amplitude * sin(freq * TAU * 0.2 / freq), width/50);
+  } 
+  multiline([new Point(period * 0.2, yMax*0.5),new Point(period * 0.2, yMax*0.75),new Point(period * 0.2 + 4*period, yMax*0.75),new Point(period * 0.2 + 4*period, yMax*0.5)])
+  multiline([new Point(period * 0.2, yMax*0.45),new Point(period * 0.2, yMax*0.55),new Point(period * 0.2 + period, yMax*0.55),new Point(period * 0.2 + period, yMax*0.5)])
 }
