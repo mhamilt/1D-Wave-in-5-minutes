@@ -258,7 +258,7 @@ function animateModes()
   if ( typeof animateModes.singlePlot === 'undefined' ) animateModes.singlePlot = 0;
   if ( typeof animateModes.modeLabel === 'undefined' ) 
   {
-    animateModes.modeLabel = createP(String.raw `\(\omega_{0}\)`);
+    animateModes.modeLabel = createP(String.raw `\(\omega_{1}\)`);
     animateModes.modeLabel.position(100, 10);
     MathJax.typeset()
   }
@@ -275,7 +275,7 @@ function animateModes()
       animateModes.numHarmonics = 2.0;
       animateModes.singlePlot = (animateModes.singlePlot)? 0:1;
     }
-    animateModes.modeLabel.html(`\\(\\omega_{${animateModes.numHarmonics-2}}\\)`)
+    animateModes.modeLabel.html(`\\(\\omega_{${animateModes.numHarmonics-1}}\\)`)
     MathJax.typeset()
   }
   let steps = 100;
