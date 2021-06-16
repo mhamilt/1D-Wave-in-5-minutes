@@ -33,11 +33,11 @@
   <div class="reveal">
     <div class="slides">
       <section data-auto-animate data-transition='fade'>
-        <h1>1D Wave Equation</h1>
+        <h1>Modes of the 1D Wave Equation</h1>
         <h1>(in 5 Minutes)</h1>
       </section>
       <section data-auto-animate data-transition='fade'>
-        <h1 style="margin-top: 25px; font-size: 0.8em;">1D Wave Equation</h1>
+        <h1 style="margin-top: 25px; font-size: 0.8em;">Modes of the 1D Wave Equation</h1>
         <!-- <h1 style="margin-top: 50px; font-size: 60px;">(in 5 Minutes)</h1> -->
         <p class="fragment"><b>Deriving Equation of Motion</b></p>
         <p class="fragment"><strong>Parameters:</strong></p>
@@ -57,24 +57,31 @@
           </ul>
         </p>
       </section>
-      <section data-transition='fade'>
-        <h1 style="margin-top: 25px; font-size: 0.8em;">1D Wave Equation</h1>
+      <!-- <section data-auto-animate>
+        <section data-auto-animate>
+          <div data-id="box" style="height: 10em; background: white;">
+            <img src="img/wave-forces.svg"></img>
+          </div>
+        </section>
+      </section> -->
+      <section data-transition='fade' data-auto-animate>
+        <p><b>Deriving Equation of Motion</b></p>
         <p>
-          Show String
+          Inifinite String
         </p>
-        <p>
-          Show in tiny detail
-        </p>
+        <img data-id="graph" src="img/infinite-string.svg" style="height: 6em;  background: white;"></img>
+      </section>
+      <section data-transition='fade' data-auto-animate>
+        <p><b>Deriving Equation of Motion</b></p>
+        <p> Under Tension $T_0$ in the $x$-axis</p>
+        <img data-id="graph" src="img/wave-forces.svg" style="height: 6em;  background: white;"></img>
       </section>
 
-      <section data-background-iframe="sketches/fd-plate/">
-        <h2>Finite Difference Plate</h2>
-        <!-- <iframe data-src="sketches/fd-plate/" ></iframe> -->
-      </section>
-      <section data-transition='fade'>
+      <section data-transition='fade' data-auto-animate>
         <p>
           Deriving Quation of Motion
         </p>
+        <img data-id="graph" src="img/wave-forces.svg" style="height: 6em;  background: white;"></img>
         <div class="r-stack">
           <i data-fragment-index="1" class="fragment fade-in">
             <i class="hidden">$F_L + $</i>
@@ -117,6 +124,7 @@
         <p>
           Deriving Quation of Motion
         </p>
+        <img data-id="graph" src="img/wave-forces.svg" style="height: 6em;  background: white;"></img>
         <div class="r-stack">
           <i>
             $\rho \Delta x \frac{\partial^2y}{\partial t^2} =\quad $
@@ -134,9 +142,8 @@
             $\qquad - \quad$
             $T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$
           </i>
-
         </div>
-        <br />
+        <!-- <br /> -->
         <div class="r-stack ">
           <i data-fragment-index="2" class="fragment fade-out">Flip it</i>
           <i data-fragment-index="2" class="fragment fade-in">
@@ -171,11 +178,11 @@
           \]
         </p>
       </section> -->
-      <section data-transition='fade' data-auto-animate>
+      <section data-auto-animate>
         <p>
           Narrative with History Type 2
         </p>
-        <p class="equation-summary">
+        <p data-id="eq1" class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
@@ -189,11 +196,11 @@
           \]
         </p>
       </section>
-      <section data-transition='fade' data-auto-animate>
+      <section  data-auto-animate>
         <p>
           Narrative with History Type 2
         </p>
-        <p class="equation-summary">
+        <p data-id="eq1" class="equation-summary">
           \[\begin{aligned}
           \require{color}
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
@@ -217,7 +224,7 @@
           \rho \Delta x \frac{\partial^2y}{\partial t^2} &= T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1} \\
           \rho\frac{\partial^2y}{\partial t^2}&= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x}\\
           &= T_0\frac{\left(\frac{\partial y}{\partial x}\bigg\vert_{x_1 + \Delta x} - \frac{\partial y}{\partial x}\bigg\vert_{x_1}\right)}{\Delta x} \\
-          \color{#00000000}\text{Remember}: \frac{dy}{dx} &= \color{#00000000}\lim\limits_{\Delta x \to 0} \frac{\frac{\partial y(x_1 + \Delta x)}{\partial x} - \frac{\partial y(x_1)}{\partial x}}{\Delta x} \\
+          \color{#00000000}\text{Remember}: \frac{dy}{dx} &= \color{#00000000}\lim\limits_{h \to 0} \frac{y(x + h) - y(x)}{h} \\
           &= \color{#00000000}T_0\frac{d}{dx}\frac{\partial y(x_1)}{\partial x} \Rightarrow \frac{\partial^2 y(x_1)}{\partial x^2}\\
           &= \color{#00000000}T_0\frac{\partial^2 y(x_1)}{\partial x^2} \\
           \color{#00000000}\frac{\partial^2y}{\partial t^2} &= \color{#00000000}c^2\frac{\partial^2 y(x_1)}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
@@ -525,6 +532,16 @@
       </section>
       <section>
         <h1>Visualising modes</h1>
+      </section>
+      <section >
+        <section >
+        <p>
+          More information on this slide deck see: github.com/mhamilt/1D-Wave-in-5-Minutes
+        </p>
+        </section>
+        <section data-background-iframe="sketches/fd-plate/">
+          <h2>Finite Difference Plate</h2>
+        </section>
       </section>
     </div>
   </div>
