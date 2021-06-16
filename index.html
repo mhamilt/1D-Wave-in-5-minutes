@@ -32,6 +32,7 @@
 <body>
   <div class="reveal">
     <div class="slides">
+
       <section data-auto-animate data-transition='fade'>
         <h1>Modes of the 1D Wave Equation</h1>
         <h1>(in 5 Minutes)</h1>
@@ -64,11 +65,60 @@
         </p>
         <img data-id="graph" src="img/infinite-string.svg" style="height: 6em;  background: white;"></img>
       </section>
-      <section data-transition='fade' data-auto-animate>
+      <section data-auto-animate data-transition='fade' data-background-color="white">
+        <span class="fragment"></span>
+        <span class="fragment"></span>
+        <span class="fragment"></span>
+        <span class="fragment"></span>
+        <span class="fragment"></span>
+        <div data-animate data-src="img/wave-forces.svg" >
+<!--
+{ "setup": [
+
+{ "element": "#g193", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },
+{ "element": "#g197", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
+{ "element": "#g201", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
+{ "element": "#g205", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
+{ "element": "#g209", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#g213", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#g217", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#g221", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#g225", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#g229", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#g233", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#g269-2-3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#g273-8-0", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+{ "element": "#g243", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g247", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g251", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g257", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g261", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g265", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g285", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
+{ "element": "#g289", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
+{ "element": "#g269", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] },
+{ "element": "#g273", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] },
+{ "element": "#g277", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] },
+{ "element": "#g281", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] },
+{ "element": "#g293", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g297", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g269-2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g273-8", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g301", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g311", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+{ "element": "#g315", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] }
+]}
+
+
+
+-->
+</div>
+      </section>
+      <!-- <section data-transition='fade' data-auto-animate>
         <p><b>Deriving Equation of Motion</b></p>
         <p> Under Tension $T_0$ in the $x$-axis</p>
         <img data-id="graph" src="img/wave-forces.svg" style="height: 6em;  background: white;"></img>
-      </section>
+      </section> -->
 
       <section data-transition='fade' data-auto-animate>
         <p>
@@ -843,6 +893,8 @@
       <script src="plugin/markdown/markdown.js"></script>
       <script src="plugin/highlight/highlight.js"></script>
       <script src="plugin/math/math.js"></script>
+      <script src="plugin/animate/plugin.js"></script>
+      <script src="plugin/animate/svg.min.js"></script>
 
       <script>
       // More info about initialization & config:
@@ -869,7 +921,7 @@
           }
         },
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, RevealAnimate]
       });
       </script>
     </body>
