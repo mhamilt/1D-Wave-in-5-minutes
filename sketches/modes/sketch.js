@@ -258,7 +258,8 @@ function animateModes()
   if ( typeof animateModes.singlePlot === 'undefined' ) animateModes.singlePlot = 0;
   if ( typeof animateModes.modeLabel === 'undefined' ) 
   {
-    animateModes.modeLabel = createP(String.raw `\(\omega_{1}\)`);
+    let n = 1;
+    animateModes.modeLabel = createP(`\\[\\omega_${n} = \\frac{${n}\\pi c}{L} \\quad k_${n} = \\frac{${n}\\pi}{L} \\quad \\lambda_${n} = \\frac{2L}{${n}}\\]`);
     animateModes.modeLabel.position(100, 10);
     MathJax.typeset()
   }
@@ -275,7 +276,8 @@ function animateModes()
       animateModes.numHarmonics = 2.0;
       animateModes.singlePlot = (animateModes.singlePlot)? 0:1;
     }
-    animateModes.modeLabel.html(`\\(\\omega_{${animateModes.numHarmonics-1}}\\)`)
+    let n = animateModes.numHarmonics -1;
+    animateModes.modeLabel.html(`\\[\\omega_${n} = \\frac{${n}\\pi c}{L} \\quad k_${n} = \\frac{${n}\\pi}{L} \\quad \\lambda_${n} = \\frac{2L}{${n}}\\]`)
     MathJax.typeset()
   }
   let steps = 100;
