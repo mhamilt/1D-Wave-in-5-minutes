@@ -50,7 +50,7 @@
             <li class="fragment">$y(x, t)$: String Displacement</li>
           </ul>
         </p>
-        
+
       </section>
       <section data-transition='fade' data-auto-animate>
         <p><b>Deriving Equation of Motion: Assumptions</b></p>
@@ -189,15 +189,15 @@
       <div class="r-stack ">
         <i data-fragment-index="2" class="fragment fade-out">Flip it</i>
         <i data-fragment-index="2" class="fragment fade-in">
-          <i data-fragment-index="5" class="fragment fade-out">$F_R = T_0sin\theta_{x_1 + \Delta x} \quad$</i>
-          <i class="hidden">($sin\theta \approx tan\theta$ for small $\theta$)</i>
+          <i data-fragment-index="5" class="fragment fade-out">$F_R = T_0\sin \theta_{x_1 + \Delta x} \quad$</i>
+          <i class="hidden">($\sin \theta \approx tan\theta$ for small $\theta$)</i>
         </i>
         <i data-fragment-index="3" class="fragment fade-in-then-out">
-          <i class="hidden">$F_R = T_0sin\theta_{x + \Delta x} \quad$</i>
-          <i>($sin\theta \approx tan\theta$ for small $\theta$)</i>
+          <i class="hidden">$F_R = T_0\sin \theta_{x + \Delta x} \quad$</i>
+          <i>($\sin \theta \approx tan\theta$ for small $\theta$)</i>
         </i>
         <i data-fragment-index="4" class="fragment fade-in-then-out">
-          <i class="hidden">$F_R = T_0sin\theta_{x + \Delta x} \quad$</i>
+          <i class="hidden">$F_R = T_0\sin \theta_{x + \Delta x} \quad$</i>
           <i>We deduce: $\quad tan\theta = \frac{\partial y}{\partial x}$</i>
         </i>
         <i data-fragment-index="5" class="fragment fade-in">
@@ -728,8 +728,8 @@
               &= \color{#00000000} Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               \color{#00000000}A &= \color{#00000000} -B \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-              \color{#00000000}y(x,t) &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+              \color{#00000000}y(x,t) &= \color{#00000000} -2iAe^{i\omega t}\sin(kx)
               \end{aligned}
               \]
             </p>
@@ -745,8 +745,8 @@
               &= \color{#00000000} Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               \color{#00000000}Ae^{i(\omega t)} &= \color{#00000000} -Be^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-              &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+              &= \color{#00000000} -2iAe^{i\omega t}\sin(kx)
               \end{aligned}
               \]
             </p>
@@ -762,8 +762,8 @@
               &= \color{#00000000}Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               \color{#00000000}Ae^{i(\omega t)} &= \color{#00000000} -Be^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-              \color{#00000000}y(x,t) &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+              \color{#00000000}y(x,t) &= \color{#00000000} -2iAe^{i\omega t}\sin(kx)
               \end{aligned}
               \]
             </p>
@@ -779,8 +779,8 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               \color{#00000000}Ae^{i(\omega t)} &= \color{#00000000} -Be^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-              &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+              &= \color{#00000000} -2iAe^{i\omega t}\sin(kx)
               \end{aligned}
               \]
             </p>
@@ -796,8 +796,8 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               Ae^{i(\omega t)} &=  -Be^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-              &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+              &= \color{#00000000} -2iAe^{i\omega t}\sin(kx)
               \end{aligned}
               \]
             </p>
@@ -813,8 +813,8 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-              &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+              &= \color{#00000000} -2iAe^{i\omega t}\sin(kx)
               \end{aligned}
               \]
             </p>
@@ -830,8 +830,8 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
               y(x,t) &=  Ae^{i(\omega t + kx)} -Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-              &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+              &= \color{#00000000} -2iAe^{i\omega t}\sin(kx)
               \end{aligned}
               \]
             </p>
@@ -847,8 +847,8 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
               y(x,t) &=  Ae^{i(\omega t + kx)} -Ae^{i(\omega t - kx)} \\
-              &= Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \color{#00000000}\quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-              &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              &= Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \color{#00000000}\quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+              &= \color{#00000000} -2iAe^{i\omega t}\sin(kx)
               \end{aligned}
               \]
             </p>
@@ -864,8 +864,8 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
               y(x,t) &=  Ae^{i(\omega t + kx)} -Ae^{i(\omega t - kx)} \\
-              &= Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-              &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              &= Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+              &= \color{#00000000} -2iAe^{i\omega t}\sin(kx)
               \end{aligned}
               \]
             </p>
@@ -883,20 +883,20 @@
             &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
             A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
             y(x,t) &=  Ae^{i(\omega t + kx)} -Ae^{i(\omega t - kx)} \\
-            &= Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
-            &= -2iAe^{i\omega t}sinkx
+            &= Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = \sin \theta \\
+            &= -2iAe^{i\omega t}\sin(kx)
             \end{aligned}
             \]
           </p>
         </section>
         <section data-transition='fade'>
-          <p >\(y(x,t)= -2iAe^{i\omega t}sinkx\)</p>
-          <p class="fragment"> if $sinkx = 0$  </p>
+          <p >\(y(x,t)= -2iAe^{i\omega t}\sin(kx)\)</p>
+          <p class="fragment"> if $\sin(kx) = 0$  </p>
           <p class="fragment">then $y(x,t) = 0$</p>
         </section>
         <section data-transition='fade'>
           <h2>The Other Boundary</h2>
-          <p>if $sinkL = 0$ </p>
+          <p>if $\sin(kL) = 0$ </p>
           <p>then $kL$ must be an integer muliple of $\pi$ </p>
           <p>i.e. $kL = n\pi$</p>
         </section>
@@ -905,8 +905,8 @@
           <p class="equation-summary">
             \[\begin{aligned}
             \require{color}
-            y(x,t) &= -2iAe^{i\omega t}sinkx \\
-            y(L,t) &= -2iAe^{i\omega t}sinkL = 0 \\
+            y(x,t) &= -2iAe^{i\omega t}\sin(kx) \\
+            y(L,t) &= -2iAe^{i\omega t}\sin(kL) = 0 \\
             kL &= n\pi ; \quad k = \frac{\omega}{c} \\
             \frac{\omega}{c}L &= n\pi \\
             \omega &= \frac{n\pi c}{L} \\
