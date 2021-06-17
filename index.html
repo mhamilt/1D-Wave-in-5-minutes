@@ -391,9 +391,10 @@
       </p>
       <p>
         \[
-        \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+        \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2}  \\
         \]
       </p>
+      <p>$c = \sqrt{\frac{T_0}{\rho}}$: wave speed</p>
     </section>
     <section data-transition='fade' data-auto-animate>
       <h4>Deriving Modes: Solutions for 1D Wave</h4>
@@ -420,8 +421,7 @@
           \color{#00000000}y(x)(i\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \\
           \color{#00000000}y(x)(-\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t} \text{ or } \times \frac{1}{c^2e^{i\omega t}}) \\
           \color{#00000000}y(x)(-\omega)^2e^{i\omega t} &= \color{#00000000}c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t} \text{ or } \times \frac{1}{c^2e^{i\omega t}}) \\
-
-          \color{#00000000}\frac{\partial^2y}{\partial x^2} &= \color{#00000000}y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+          \color{#00000000}\frac{\partial^2y}{\partial x^2} &= \color{#00000000}y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic / Helmholtz equation)} \\
           \end{aligned}
           \]
         </p>
@@ -493,7 +493,24 @@
           \]
         </p>
       </section>
+      <section data-transition='fade' data-auto-animate>
+        <p>Deriving Modes: Periodic Solution for 1D Wave</p>
+        <p class="equation-summary">
+          \[
+          \begin{aligned}
+          \require{color}
+          \require{cancel}
+          y(x, t) &= y(x)e^{i\omega t} \Rightarrow \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2} \\
+          y(x)(i\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y(x)}{\partial x^2}e^{i\omega t} \\
+          y(x)(-\omega)^2e^{i\omega t} &= c^2\frac{\partial^2y}{\partial x^2}e^{i\omega t} \quad (\div \ c^2e^{i\omega t}) \\
+          y(x)\frac{(-\omega)^2}{c^2}\color{#00000000}e^{i\omega t} &= \color{#00000000}c^2\color{#FFFFFF}\frac{\partial^2y}{\partial x^2}\color{#00000000}e^{i\omega t} \color{#00000000}\quad (\div \ c^2e^{i\omega t}) \\
+          \color{#00000000}\frac{\partial^2y}{\partial x^2} &= \color{#00000000}y(x)frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)} \\
+          \end{aligned}
+          \]
+        </p>
+      </section>
     </section>
+    <!-- y(x,t) = -2iAe^(i*omega*t)*sin(n*pi*x) -->
     <section data-transition='fade' data-auto-animate>
       <p>Deriving Modes: Periodic Solution for 1D Wave</p>
       <p class="equation-summary">
@@ -901,20 +918,38 @@
           <p>i.e. $kL = n\pi$</p>
         </section>
         <section data-transition='fade'>
-          <p>The Other Boundary</p>
-          <p class="equation-summary">
-            \[\begin{aligned}
-            \require{color}
-            y(x,t) &= -2iAe^{i\omega t}\sin(kx) \\
-            y(L,t) &= -2iAe^{i\omega t}\sin(kL) = 0 \\
-            kL &= n\pi ; \quad k = \frac{\omega}{c} \\
-            \frac{\omega}{c}L &= n\pi \\
-            \omega &= \frac{n\pi c}{L} \\
-            \omega_n &= \frac{n\pi c}{L}  \\
-            \end{aligned}
-            \]
-          </p>
-          <aside class="notes">k = omega / c from dispersion relation. omega_n modes of 1d wave</aside>
+          <section data-transition='fade'>
+            <p>The Other Boundary</p>
+            <p class="equation-summary">
+              \[\begin{aligned}
+              \require{color}
+
+              y(x,t) &= -2iAe^{i\omega t}\sin(kx) \\
+              y(L,t) &= -2iAe^{i\omega t}\sin(kL) = 0 \\
+              kL &= n\pi ; \quad k = \frac{\omega}{c} \\
+              \omega &= \frac{n\pi c}{L} \\
+              y(x,t) &= -2iAe^{i\omega t}\sin(n \pi x)
+              \end{aligned}
+              \]
+            </p>
+            <aside class="notes">k = omega / c from dispersion relation. omega_n modes of 1d wave</aside>
+          </section>
+          <section data-transition='fade'>
+            <p>The Other Boundary</p>
+            <p class="equation-summary">
+              \[\begin{aligned}
+              \require{color}
+
+              y(x,t) &= -2iAe^{i\omega t}\sin(kx) \\
+              y(L,t) &= -2iAe^{i\omega t}\sin(kL) = 0 \\
+              kL &= n\pi ; \quad k = \frac{\omega}{c} \\              
+              \omega_n &= \frac{n\pi c}{L}  \\
+              \color{red}y(x,t) &= \color{red}-2iAe^{i\omega t}\sin(n \pi x)
+              \end{aligned}
+              \]
+            </p>
+            <aside class="notes">k = omega / c from dispersion relation. omega_n modes of 1d wave</aside>
+          </section>
         </section>
         <section>
           <p>Modes of 1D wave:  </p>
