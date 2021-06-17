@@ -36,6 +36,7 @@
       <section data-auto-animate data-transition='fade'>
         <h1>Modes of the 1D Wave Equation</h1>
         <h1>(in 5 Minutes)</h1>
+        <aside class="notes">See link for presentation</aside>
       </section>
       <section data-auto-animate data-transition='fade'>
         <h1 style="margin-top: 25px; font-size: 0.8em;">Modes of the 1D Wave Equation</h1>
@@ -49,24 +50,17 @@
             <li class="fragment">$y(x, t)$: String Displacement</li>
           </ul>
         </p>
-        <p class="fragment"><b>Assumptions:</b></p>
-        <p>
-          <ul>
-            <li class="fragment">Infinite Length</li>
-            <li class="fragment">Transverse Motion Only (i.e. only move in y-axis)</li>
-            <li class="fragment">Under Tension $T_0$ in the $x$-axis</li>
-          </ul>
-        </p>
+        
       </section>
       <section data-transition='fade' data-auto-animate>
-        <p><b>Deriving Equation of Motion</b></p>
+        <p><b>Deriving Equation of Motion: Assumptions</b></p>
         <p>
           Transverse Motion
         </p>
         <iframe class="fragment" data-src="sketches/transverse/" style="height: 6em; width: 50%;" data-preload></iframe>
       </section>
       <section data-transition='fade' data-auto-animate>
-        <p><b>Deriving Equation of Motion</b></p>
+        <p><b>Deriving Equation of Motion: Assumptions</b></p>
         <p>
           Inifinite String
         </p>
@@ -120,6 +114,7 @@
 
         -->
       </div>
+      <aside class="notes">Tiny section; space x across delta x, tension, angl deflection, forces left and right</aside>
     </section>
 
 
@@ -165,6 +160,7 @@
         <i data-fragment-index="4" class="fragment fade-in-then-out">which can be expressed as $\Delta x ^{ths}$ worth of the linear mass density $\rho$</i>
         <i data-fragment-index="5" class="fragment ">$a = \frac{\partial^2y}{\partial t^2}$</i>
       </div>
+      <aside class="notes">Start off with Newton, make some substitutions</aside>
     </section>
     <section data-transition='fade' data-auto-animate>
       <p>
@@ -209,6 +205,7 @@
           <i data-fragment-index="7" class="fragment">and $F_L = -T_0\frac{\partial y}{\partial x}\bigg\vert_{x_1}$</i>
         </i>
       </div>
+      <aside class="notes">Pythagoras with angle of deflection</aside>
     </section>
 
     <section data-auto-animate>
@@ -394,14 +391,26 @@
       </p>
       <p>
         \[
-        \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 }{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
+        \frac{\partial^2y}{\partial t^2} = c^2\frac{\partial^2 y}{\partial x^2} \quad ; \quad c = \sqrt{\frac{T_0}{\rho}} \\
         \]
       </p>
     </section>
-
+    <section data-transition='fade' data-auto-animate>
+      <h4>Deriving Modes: Solutions for 1D Wave</h4>
+      <p class="fragment">
+        Periodic Solution: Complex Exponential
+      </p>
+      <p class="fragment">
+        \[y(x,t) = y(x)y(t)\]
+      </p>
+      <p class="fragment">
+        \[y(x,t) = y(x)e^{i\omega t}\]
+      </p>
+      <aside class="notes">Other solutions: travelling wave</aside>
+    </section>
     <section data-transition='fade' data-auto-animate>
       <section data-transition='fade' data-auto-animate>
-        <p>Deriving Modes: Solutions for 1D Wave</p>
+        <p>Deriving Modes: Periodic Solution for 1D Wave</p>
         <p class="equation-summary">
           \[
           \begin{aligned}
@@ -416,9 +425,10 @@
           \end{aligned}
           \]
         </p>
+        <aside class="notes">Split time and space functions y(x,t) = product of y(x)y(t)</aside>
       </section>
       <section data-transition='fade' data-auto-animate>
-        <p>Deriving Modes: Solutions for 1D Wave</p>
+        <p>Deriving Modes: Periodic Solution for 1D Wave</p>
         <p class="equation-summary">
           \[
           \begin{aligned}
@@ -435,7 +445,7 @@
         </p>
       </section>
       <section data-transition='fade' data-auto-animate>
-        <p>Deriving Modes: Solutions for 1D Wave</p>
+        <p>Deriving Modes: Periodic Solution for 1D Wave</p>
         <p class="equation-summary">
           \[
           \begin{aligned}
@@ -452,7 +462,7 @@
         </p>
       </section>
       <section data-transition='fade' data-auto-animate>
-        <p>Deriving Modes: Solutions for 1D Wave</p>
+        <p>Deriving Modes: Periodic Solution for 1D Wave</p>
         <p class="equation-summary">
           \[
           \begin{aligned}
@@ -468,7 +478,7 @@
         </p>
       </section>
       <section data-transition='fade' data-auto-animate>
-        <p>Deriving Modes: Solutions for 1D Wave</p>
+        <p>Deriving Modes: Periodic Solution for 1D Wave</p>
         <p class="equation-summary">
           \[
           \begin{aligned}
@@ -485,7 +495,7 @@
       </section>
     </section>
     <section data-transition='fade' data-auto-animate>
-      <p>Deriving Modes: Solutions for 1D Wave</p>
+      <p>Deriving Modes: Periodic Solution for 1D Wave</p>
       <p class="equation-summary">
         \[
         \begin{aligned}
@@ -512,7 +522,7 @@
             \[\frac{\partial^2y}{\partial x^2} = y(x)\frac{(-\omega)^2}{c^2} \quad \text{Equation of Motion (Time Harmonic)}\]
           </p>
           <p> General Solution:</p>
-          <p>\(y = A e^{ikx} + B e^{ikx} ;\quad k \triangleq \frac{\tau}{\lambda}\)</p>
+          <p>\(y = A e^{ikx} + B e^{-ikx} ;\quad k \triangleq \frac{\tau}{\lambda}\)</p>
         </section>
         <section data-transition='fade'>
           <section data-transition='fade'>
@@ -533,8 +543,8 @@
               \begin{aligned}
               \require{color}
               \require{cancel}
-              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
-              \color{#00000000}-k^2A e^{ikx} - k^2 B e^{-ikx} &= \color{#00000000}\frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \color{#00000000}\qquad (\div A e^{ikx} + B e^{ikx}) \\
+              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \\
+              \color{#00000000}-k^2A e^{ikx} - k^2 B e^{-ikx} &= \color{#00000000}\frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \color{#00000000}\qquad (\div A e^{ikx} + B e^{-ikx}) \\
               \color{#00000000}-k^2 &= \color{#00000000} \frac{-\omega^2}{c^2} \\
               \color{#00000000}-k^2c^2 &= \color{#00000000} -\omega^2 \\
               \color{#00000000}\omega^2 &= \color{#00000000} k^2c^2 \\
@@ -548,8 +558,8 @@
               \begin{aligned}
               \require{color}
               \require{cancel}
-              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
-              -k^2A e^{ikx} - k^2 B e^{-ikx} &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \color{#00000000}\qquad (\div A e^{ikx} + B e^{ikx}) \\
+              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \\
+              -k^2A e^{ikx} - k^2 B e^{-ikx} &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \color{#00000000}\qquad (\div A e^{ikx} + B e^{-ikx}) \\
               \color{#00000000}-k^2 &= \color{#00000000} \frac{-\omega^2}{c^2} \\
               \color{#00000000}-k^2c^2 &= \color{#00000000} -\omega^2 \\
               \color{#00000000}\omega^2 &= \color{#00000000} k^2c^2 \\
@@ -563,8 +573,8 @@
               \begin{aligned}
               \require{color}
               \require{cancel}
-              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
-              -k^2A e^{ikx} - k^2 B e^{-ikx} &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \qquad (\div A e^{ikx} + B e^{ikx}) \\
+              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \\
+              -k^2(A e^{ikx} + B e^{-ikx}) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \color{#00000000}\qquad (\div A e^{ikx} + B e^{-ikx}) \\
               \color{#00000000}-k^2 &= \color{#00000000} \frac{-\omega^2}{c^2} \\
               \color{#00000000}-k^2c^2 &= \color{#00000000} -\omega^2 \\
               \color{#00000000}\omega^2 &= \color{#00000000} k^2c^2 \\
@@ -578,8 +588,23 @@
               \begin{aligned}
               \require{color}
               \require{cancel}
-              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
-              -k^2A e^{ikx} - k^2 B e^{-ikx} &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \qquad (\div A e^{ikx} + B e^{ikx}) \\
+              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \\
+              -k^2(A e^{ikx} + B e^{-ikx}) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \qquad (\div A e^{ikx} + B e^{-ikx}) \\
+              \color{#00000000}-k^2 &= \color{#00000000} \frac{-\omega^2}{c^2} \\
+              \color{#00000000}-k^2c^2 &= \color{#00000000} -\omega^2 \\
+              \color{#00000000}\omega^2 &= \color{#00000000} k^2c^2 \\
+              \end{aligned}
+              \]
+            </p>
+          </section>
+          <section data-transition='fade'>
+            <p class="equation-summary">
+              \[
+              \begin{aligned}
+              \require{color}
+              \require{cancel}
+              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \\
+              -k^2(A e^{ikx} + B e^{-ikx}) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \qquad (\div A e^{ikx} + B e^{-ikx}) \\
               -k^2 &= \frac{-\omega^2}{c^2} \\
               \color{#00000000}-k^2c^2 &= \color{#00000000}-\omega^2 \\
               \color{#00000000}\omega^2 &= \color{#00000000} k^2c^2 \\
@@ -593,8 +618,8 @@
               \begin{aligned}
               \require{color}
               \require{cancel}
-              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
-              -k^2A e^{ikx} - k^2 B e^{-ikx} &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \qquad (\div A e^{ikx} + B e^{ikx}) \\
+              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \\
+              -k^2(A e^{ikx} + B e^{-ikx}) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \qquad (\div A e^{ikx} + B e^{-ikx}) \\
               -k^2 &= \frac{-\omega^2}{c^2} \\
               -k^2c^2 &= -\omega^2 \\
               \color{#00000000}\omega^2 &= \color{#00000000} k^2c^2 \\
@@ -608,8 +633,8 @@
               \begin{aligned}
               \require{color}
               \require{cancel}
-              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
-              -k^2A e^{ikx} - k^2 B e^{-ikx} &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \qquad (\div A e^{ikx} + B e^{ikx}) \\
+              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \\
+              -k^2(A e^{ikx} + B e^{-ikx}) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \qquad (\div A e^{ikx} + B e^{-ikx}) \\
               -k^2 &= \frac{-\omega^2}{c^2} \\
               \color{#00000000}-\color{white}k^2c^2 &= \color{#00000000}-\color{white}\omega^2 \\
               \color{#00000000}\omega^2 &= \color{#00000000} k^2c^2 \\
@@ -623,8 +648,8 @@
               \begin{aligned}
               \require{color}
               \require{cancel}
-              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
-              -k^2A e^{ikx} - k^2 B e^{-ikx} &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \qquad (\div A e^{ikx} + B e^{ikx}) \\
+              \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \\
+              -k^2(A e^{ikx} + B e^{-ikx}) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \qquad (\div A e^{ikx} + B e^{-ikx}) \\
               -k^2 &= \frac{-\omega^2}{c^2} \\
               \color{#00000000}-\color{white}k^2c^2 &= \color{#00000000}-\color{white}\omega^2 \\
               \omega^2 &=  k^2c^2 \\
@@ -640,8 +665,8 @@
             \begin{aligned}
             \require{color}
             \require{cancel}
-            \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \\
-            -k^2A e^{ikx} - k^2 B e^{-ikx} &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{ikx}\right) \qquad (\div A e^{ikx} + B e^{ikx}) \\
+            \frac{\partial^2}{\partial x^2}\left(A e^{ikx} + B e^{-ikx}\right) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \\
+            -k^2(A e^{ikx} + B e^{-ikx}) &= \frac{-\omega^2}{c^2}\left(A e^{ikx} + B e^{-ikx}\right) \qquad (\div A e^{ikx} + B e^{-ikx}) \\
             -k^2 &= \frac{-\omega^2}{c^2} \\
             \color{#00000000}-\color{white}k^2c^2 &= \color{#00000000}-\color{white}\omega^2 \\
             \omega^{\color{#00000000}2} &=  k^{\color{#00000000}2}c^{\color{#00000000}2} \\
@@ -673,18 +698,23 @@
           <h2>Boundary conditions</h2>
         </section>
         <section data-transition='fade'>
-          <p>Deriving Modes</p>
-          <p>Boundary conditions</p>
-          <p>
-            String length has been infinite
-          </p>
-          <p>
-            What if string length is finite
-          </p>
-          <p>
-            Assumption at ends of string:
-          </p>
-          <p>$y(0,t) = 0$ and $y(L,t) = 0 \ ; \quad ∀t$ (rigid condition)</p>
+          <section data-transition='fade'>
+            <p>Deriving Modes</p>
+            <p>Boundary conditions</p>
+            <p>
+              String length has been infinite
+            </p>
+            <p>
+              What if string length is finite
+            </p>
+            <p>
+              Assumption at ends of string:
+            </p>
+            <p>$y(0,t) = 0$ and $y(L,t) = 0 \ ; \quad ∀t$ (rigid condition)</p>
+          </section>
+          <section data-transition='fade'>
+            <img src="img/piano_string.jpg"></img>
+          </section>
         </section>
         <section data-transition='fade'>
           <section data-transition='fade'>
@@ -698,7 +728,7 @@
               &= \color{#00000000} Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               \color{#00000000}A &= \color{#00000000} -B \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
               \color{#00000000}y(x,t) &= \color{#00000000} -2iAe^{i\omega t}sinkx
               \end{aligned}
               \]
@@ -715,7 +745,7 @@
               &= \color{#00000000} Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               \color{#00000000}Ae^{i(\omega t)} &= \color{#00000000} -Be^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
               &= \color{#00000000} -2iAe^{i\omega t}sinkx
               \end{aligned}
               \]
@@ -732,7 +762,7 @@
               &= \color{#00000000}Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               \color{#00000000}Ae^{i(\omega t)} &= \color{#00000000} -Be^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
               \color{#00000000}y(x,t) &= \color{#00000000} -2iAe^{i\omega t}sinkx
               \end{aligned}
               \]
@@ -749,7 +779,7 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               \color{#00000000}Ae^{i(\omega t)} &= \color{#00000000} -Be^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
               &= \color{#00000000} -2iAe^{i\omega t}sinkx
               \end{aligned}
               \]
@@ -766,7 +796,7 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               Ae^{i(\omega t)} &=  -Be^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
               &= \color{#00000000} -2iAe^{i\omega t}sinkx
               \end{aligned}
               \]
@@ -783,7 +813,7 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
               \color{#00000000}y(x,t) &= \color{#00000000} Ae^{i(\omega t + kx)} - Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
               &= \color{#00000000} -2iAe^{i\omega t}sinkx
               \end{aligned}
               \]
@@ -800,7 +830,7 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
               y(x,t) &=  Ae^{i(\omega t + kx)} -Ae^{i(\omega t - kx)} \\
-              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              &= \color{#00000000} Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
               &= \color{#00000000} -2iAe^{i\omega t}sinkx
               \end{aligned}
               \]
@@ -817,7 +847,24 @@
               &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
               A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
               y(x,t) &=  Ae^{i(\omega t + kx)} -Ae^{i(\omega t - kx)} \\
-              &= Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \color{#00000000}\quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              &= Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \color{#00000000}\quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+              &= \color{#00000000} -2iAe^{i\omega t}sinkx
+              \end{aligned}
+              \]
+            </p>
+          </section>
+          <section data-transition='fade'>
+            <p class="equation-summary">
+              \[
+              \begin{aligned}
+              \require{color}
+              \require{cancel}
+              y(x,t) &= Ae^{i(\omega t + kx)} + Be^{i(\omega t - kx)} \\
+              y(0,t) &=  Ae^{i(\omega t + k0)} + Be^{i(\omega t - k0)}  = 0\\
+              &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
+              A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
+              y(x,t) &=  Ae^{i(\omega t + kx)} -Ae^{i(\omega t - kx)} \\
+              &= Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
               &= \color{#00000000} -2iAe^{i\omega t}sinkx
               \end{aligned}
               \]
@@ -836,7 +883,7 @@
             &= Ae^{i(\omega t)} + Be^{i(\omega t)} = 0 \\
             A\color{#00000000}e^{i(\omega t)} &=  -B\color{#00000000}e^{i(\omega t)} \\
             y(x,t) &=  Ae^{i(\omega t + kx)} -Ae^{i(\omega t - kx)} \\
-            &= Ae^{i\omega t}\left(e^{ikx} - e^{ikx}\right) \color{#00000000}\quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
+            &= Ae^{i\omega t}\left(e^{ikx} - e^{-ikx}\right) \quad \text{Remember:} \frac{e^{i\theta} - e^{-i\theta}}{2i} = sin\theta \\
             &= -2iAe^{i\omega t}sinkx
             \end{aligned}
             \]
@@ -858,8 +905,8 @@
           <p class="equation-summary">
             \[\begin{aligned}
             \require{color}
-            y(L,t) &= 0 \\
             y(x,t) &= -2iAe^{i\omega t}sinkx \\
+            y(L,t) &= -2iAe^{i\omega t}sinkL = 0 \\
             kL &= n\pi ; \quad k = \frac{\omega}{c} \\
             \frac{\omega}{c}L &= n\pi \\
             \omega &= \frac{n\pi c}{L} \\
@@ -867,6 +914,7 @@
             \end{aligned}
             \]
           </p>
+          <aside class="notes">k = omega / c from dispersion relation. omega_n modes of 1d wave</aside>
         </section>
         <section>
           <p>Modes of 1D wave:  </p>
