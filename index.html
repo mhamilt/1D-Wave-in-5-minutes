@@ -543,13 +543,13 @@
         </section>
         <section data-transition='fade'>
           <section data-transition='fade'>
-            <p>$k $ is 'Spatial angular frequency' or </p>
-            <p>'angular wave number' </p>
-            <p>(number of equal phase locations per meter)</p>
+            <p>$k $: angular wave number </p>
+            <p>$\tilde{\nu}$: wavenumber (equal phase locations per meter)</p>
             <iframe data-src="sketches/wave-number/" style="height: 6em; width: 50%;" data-preload></iframe>
           </section>
           <section data-transition='fade'>
             <img data-id="graph" src="img/Commutative_diagram_of_harmonic_wave_properties.svggit.svg" style="height: 12em;  background: white;"></img>
+            <p>Commutattive Diagram of Harmonic Wave Properties</p>
             <p><a href="https://commons.wikimedia.org/wiki/File:Commutative_diagram_of_harmonic_wave_properties.svg">Waldir</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
           </section>
         </section>
@@ -718,16 +718,10 @@
           <section data-transition='fade'>
             <p>Deriving Modes</p>
             <p>Boundary conditions</p>
-            <p>
-              String length has been infinite
-            </p>
-            <p>
-              What if string length is finite
-            </p>
-            <p>
-              Assumption at ends of string:
-            </p>
-            <p>$y(0,t) = 0$ and $y(L,t) = 0 \ ; \quad ∀t$ (rigid condition)</p>
+            <p class="fragment">String length has been infinite</p>
+            <p class="fragment">What if string length is finite?</p>
+            <p class="fragment">Assumption at ends of string:</p>
+            <p class="fragment">$y(0,t) = 0$ and $y(L,t) = 0 \ ; \quad ∀t$ (rigid condition)</p>
           </section>
           <section data-transition='fade'>
             <img src="img/piano_string.jpg"></img>
@@ -942,7 +936,7 @@
 
               y(x,t) &= -2iAe^{i\omega t}\sin(kx) \\
               y(L,t) &= -2iAe^{i\omega t}\sin(kL) = 0 \\
-              kL &= n\pi ; \quad k = \frac{\omega}{c} \\              
+              kL &= n\pi ; \quad k = \frac{\omega}{c} \\
               \omega_n &= \frac{n\pi c}{L}  \\
               \color{red}y(x,t) &= \color{red}-2iAe^{i\omega t}\sin(n \pi x)
               \end{aligned}
