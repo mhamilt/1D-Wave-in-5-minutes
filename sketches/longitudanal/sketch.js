@@ -39,11 +39,11 @@ function draw()
   background(220);
   drawAxis(origin);
   animateLongitudanalMotion();
-  
+
 }
 
 function mousePressed() {
-  
+
 }
 
 
@@ -71,7 +71,7 @@ function drawAxis(origin)
   let arrowHeight = arrowWidth * 1.2;
   triangle(origin.x - arrowWidth/2, arrowHeight, origin.x, 0, origin.x + arrowWidth/2, arrowHeight);
   triangle(width - arrowHeight, origin.y - arrowWidth/2, width - arrowHeight, origin.y + arrowWidth/2, width, origin.y);
-  
+
   let gridSize = 50;
   let numGridLines = width / gridSize;
   strokeWeight(0.2);
@@ -83,7 +83,7 @@ function drawAxis(origin)
   }
   strokeWeight(1)
   stroke(0);
-  
+
   translate(origin.x, origin.y);
   scale(1,-1);
 }
@@ -97,11 +97,11 @@ function drawAxis(origin)
 function dottedLine(start, end, dotLength)
 {
   if (typeof(dotLength)==='undefined') dotLength = 5;
-  
+
   let distance = dist(start.x, start.y, end.x, end.y);
   let numDots = floor(distance / dotLength);
   let lerpDiv = 1 / numDots;
-  
+
   for (let i = 0; i < numDots; i+=2)
   {
     line(lerp(start.x, end.x, lerpDiv*i), lerp(start.y, end.y, lerpDiv*i), lerp(start.x, end.x, lerpDiv*(i + 1)), lerp(start.y, end.y, lerpDiv*(i + 1)));
@@ -118,7 +118,7 @@ function dottedLine(start, end, dotLength)
 function dottedSpline(pointArray, dotLength)
 {
   if (typeof(dotLength)==='undefined') dotLength = 15;
-  
+
   let steps = 30;
   for (let i = 0; i < steps; i += 2)
   {
@@ -128,7 +128,7 @@ function dottedSpline(pointArray, dotLength)
     let y1 = bezierPoint(pointArray[0].y, pointArray[1].y, pointArray[2].y, pointArray[3].y, t1);
     let x2 = bezierPoint(pointArray[0].x, pointArray[1].x, pointArray[2].x, pointArray[3].x, t2);
     let y2 = bezierPoint(pointArray[0].y, pointArray[1].y, pointArray[2].y, pointArray[3].y, t2);
-    
+
     line(x1,y1,x2,y2);
   }
 }
@@ -163,7 +163,7 @@ function arrowSpline(pointArray, hasArrowStart, hasArrowEnd)
   // get angle from origin
   // calculate x and y components
   // rotate by angle of line from bezier end and bezier point 0.99
-  
+
 }
 
 
@@ -174,7 +174,7 @@ function drawInfiniteString()
   dottedSpline(bezierPoints);
   dottedLine(new Point(-50,-50), bezierPoints[0]);
   dottedLine(bezierPoints[3], new Point(350,100));
-  
+
   noFill();
   bezier(bezierPoints[0].x, bezierPoints[0].y, bezierPoints[1].x, bezierPoints[1].y, bezierPoints[2].x, bezierPoints[2].y, bezierPoints[3].x, bezierPoints[3].y);
   let px = bezierPoint(bezierPoints[0].x, bezierPoints[1].x, bezierPoints[2].x, bezierPoints[3].x, 0.9)
@@ -203,7 +203,7 @@ function drawSmallStringSection()
 function animateTransverseMotion()
 {
   if ( typeof animateTransverseMotion.animatePhase === 'undefined' ) animateTransverseMotion.animatePhase = 0.0;
-  
+
   animateTransverseMotion.animatePhase += 0.01;
   let gain = sin(TAU * animateTransverseMotion.animatePhase);
   let steps = 100;
@@ -217,7 +217,7 @@ function animateTransverseMotion()
     let y2 = gain * amplitude * sin(phaseDelta * (i + 1));
     line(stepSize * i , y1, stepSize * (i + 1), y2);
   }
-  let y = gain * amplitude * sin(phaseDelta * 57);  
+  let y = gain * amplitude * sin(phaseDelta * 57);
   circle(stepSize * 57, y, 7);
 }
 
@@ -227,7 +227,7 @@ function animateModes()
   if ( typeof animateModes.animatePhase === 'undefined' ) animateModes.animatePhase = 0.0;
   if ( typeof animateModes.numHarmonics === 'undefined' ) animateModes.numHarmonics = 2.0;
   if ( typeof animateModes.singlePlot === 'undefined' ) animateModes.singlePlot = 0;
-  if ( typeof animateModes.modeLabel === 'undefined' ) 
+  if ( typeof animateModes.modeLabel === 'undefined' )
   {
     let n = 1;
     animateModes.modeLabel = createP(`\\[\\omega_${n} = \\frac{${n}\\pi c}{L} \\quad k_${n} = \\frac{${n}\\pi}{L} \\quad \\lambda_${n} = \\frac{2L}{${n}}\\]`);
@@ -237,9 +237,9 @@ function animateModes()
 
 
   animateModes.animatePhase += 0.01;
-  if(animateModes.animatePhase > 1.0) 
+  if(animateModes.animatePhase > 1.0)
   {
-    
+
     animateModes.animatePhase -= 1.0;
     animateModes.numHarmonics++;
     if(animateModes.numHarmonics > 6)
@@ -254,7 +254,7 @@ function animateModes()
   let steps = 100;
   let stepSize = xMax / steps;
   let amplitude = xMax * 0.2;
-  
+
   for (let h = ((animateModes.singlePlot)? 1:animateModes.numHarmonics-1); h < animateModes.numHarmonics; h++)
   {
     let gain = sin(TAU * animateModes.animatePhase * h) / h;
@@ -265,9 +265,9 @@ function animateModes()
       let y2 = gain * amplitude * sin(phaseDelta * (i + 1));
       line(stepSize * i , y1, stepSize * (i + 1), y2);
     }
-    
+
     let nodeSize = width * 0.023;
-    
+
     for (let i = ((animateModes.singlePlot)? 1: h); i <= h; i++)
     {
       for (let j = 1; j <= i; j++)
@@ -278,27 +278,50 @@ function animateModes()
   }
 }
 
+
+/// Very simple Longitudanal Motion animation
+/// y=\sin ( \omega_0 x + Au(x) -  Au(0) ) A <
+/// u(x)=\frac{B - \cos \omega_c x}{B} \omega_c < \omega_0
+///
+/// OR
+///
+/// y=\sin ( \omega_0 x + Au(x) - Au(0))
+/// u(x)=\frac{1 - \cos \omega_c (x + phi)}{2} \omega_c < \omega_0
 function animateLongitudanalMotion()
 {
+
+
   if ( typeof animateTransverseMotion.animatePhase === 'undefined' ) animateTransverseMotion.animatePhase = 0.0;
-  
+
   animateTransverseMotion.animatePhase += 0.01;
   if(animateModes.animatePhase > 1.0)  animateModes.animatePhase -= 1.0;
-  let gain = 1;
+  let gain = 0.9;
   let steps = 400;
   let stepSize = xMax / steps;
   let freq = 2;
-  let phaseDelta = freq * TAU * stepSize / xMax;
+  let omega0 = 10;
+  let phaseDelta = omega0 * TAU * stepSize / xMax;
   let amplitude = xMax * 0.2;
+
+  let omegaC = 2;
+  let maxShift = 10; // (2 omega0) / omegaC
+  let A = (omega0) / omegaC;
+  let phi = animateTransverseMotion.animatePhase * TAU;
+  let carrierDelta = omegaC*TAU * stepSize / xMax;
+  let u01 = A*(1 - cos(phi))/2
+  let u02 = A*(1 - cos(carrierDelta + phi))/2
   for (let i = 0; i < steps; i++)
   {
-    let y1 = gain * amplitude * sin(sin(phaseDelta * i + (10*sin(animateTransverseMotion.animatePhase)))*phaseDelta * i);
-    let y2 = gain * amplitude * sin(sin(phaseDelta * (i+1) + (10*sin(animateTransverseMotion.animatePhase)))*phaseDelta * (i + 1));
+    let ux1 = A*(1 - cos(i*carrierDelta + phi))/2
+    
+    let ux2 = A*(1 - cos((i+1)*carrierDelta + phi))/2
+      
+    let y1 = gain * amplitude * sin((phaseDelta * i) + ux1 - u01);
+    let y2 = gain * amplitude * sin((phaseDelta * (i+1)) + ux2 - u01);
     line(stepSize * i , y1, stepSize * (i + 1), y2);
+
   }
-  // let y = gain * amplitude * sin(sin(phaseDelta * 57 + (10*sin(animateTransverseMotion.animatePhase)))*phaseDelta * 57);
   
-  // circle(stepSize * 57, y, 7);
 }
 
 
@@ -313,7 +336,7 @@ function drawWaveNumber()
   {
     line(stepSize * i , amplitude * sin(phaseDelta * i), stepSize * i + 1, amplitude * sin(phaseDelta * i + 1));
   }
-  
+
   // circle(xMax * 0.2, amplitudesin(freq * TAU * 0.2), 5);
   // circle(xMax * 0.2, amplitudesin(freq * TAU * 0.2), 5);
 }

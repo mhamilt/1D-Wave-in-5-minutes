@@ -210,7 +210,7 @@ function animateTransverseMotion()
   let stepSize = xMax / steps;
   let freq = 2;
   let phaseDelta = freq * TAU * stepSize / xMax;
-  let amplitude = xMax * 0.2;
+  let amplitude = xMax * 0.15;
   for (let i = 0; i < steps; i++)
   {
     let y1 = gain * amplitude * sin(phaseDelta * i);
