@@ -1,4 +1,6 @@
-# 1D-Wave-in-5-minutes
+| ![ ](./img/title.png) |
+| :-------------------: |
+|  How do we get here?  |
 
 Reveal.js presentation and notes around the 1D wave equation and its modal frequencies
 
