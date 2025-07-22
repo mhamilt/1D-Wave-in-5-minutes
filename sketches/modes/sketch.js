@@ -109,7 +109,7 @@ function drawAxis(origin)
   push()
   translate(0, origin.y);
   
-  for (let i = -numGridLines; i < numGridLines; i++) {
+  for (let i = -numGridLines; i <= numGridLines; i++) {
     line(0, gridSize * i, width, gridSize * i);
     line(gridSize * i, -height, gridSize * i, height);
   }
