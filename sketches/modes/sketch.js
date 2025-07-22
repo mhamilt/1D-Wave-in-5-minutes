@@ -102,14 +102,20 @@ function drawAxis(origin)
   triangle(width - arrowHeight, origin.y - arrowWidth/2, width - arrowHeight, origin.y + arrowWidth/2, width, origin.y);
   
   let gridSize = 50;
-  let numGridLines = width / gridSize;
+  let numGridLines = Math.floor(width / gridSize);
   strokeWeight(0.2);
-  stroke('rgba(0,0,200,0.8)');
-  for (let i = 0; i < numGridLines; i++)
-  {
+  stroke("rgba(0,0,200,0.8)");
+  
+  push()
+  translate(0, origin.y);
+  
+  for (let i = -numGridLines; i < numGridLines; i++) {
     line(0, gridSize * i, width, gridSize * i);
-    line(gridSize * i, 0, gridSize * i, height);
+    line(gridSize * i, -height, gridSize * i, height);
   }
+    
+  pop()
+  
   strokeWeight(1)
   stroke(0);
   
